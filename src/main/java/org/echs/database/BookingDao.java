@@ -1,13 +1,18 @@
 package org.echs.database;
 
-import org.echs.model.Booking;
+import org.echs.model.BookingEntity;
 
-import javax.ws.rs.core.Response;
+import java.time.LocalDate;
+import java.util.List;
 
 public interface BookingDao {
-    public Response getBooking(long id);
-    public Response createBooking(Booking customer);
-    public Response updateBooking(Booking customer);
-    public Response deleteBooking(int id);
-    public Response getAllBookings();
+    BookingEntity getBooking(long id) throws Exception;
+
+    BookingEntity createBooking(BookingEntity customer) throws Exception;
+
+    BookingEntity updateBooking(BookingEntity customer);
+
+    BookingEntity deleteBooking(long id);
+
+    List<BookingEntity> getAllBookings(LocalDate date) throws Exception;
 }
