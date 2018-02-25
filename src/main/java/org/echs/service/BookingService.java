@@ -3,6 +3,8 @@ package org.echs.service;
 import org.echs.database.BookingDao;
 import org.echs.database.BookingDaoImpl;
 import org.echs.model.BookingEntity;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -14,6 +16,7 @@ public class BookingService {
     private final LocalDateTime LUNCH_END = LocalDateTime.now().withHour(13).withMinute(59);
     private final LocalDateTime DAY_START = LocalDateTime.now().withHour(8).withMinute(59);
     private final LocalDateTime DAY_END = LocalDateTime.now().withHour(15).withMinute(39);
+    private static final Logger logger = LoggerFactory.getLogger(BookingService.class);
 
     BookingDao bookingDao = new BookingDaoImpl();
 
@@ -22,6 +25,7 @@ public class BookingService {
     }
 
     public BookingEntity getBooking(long id) throws Exception {
+        logger.info("Retrieving all bookings for today...");
         return bookingDao.getBooking(id);
     }
 
@@ -31,6 +35,7 @@ public class BookingService {
         if (!allotedSlots.isEmpty()) {
             if (!allotedSlots.contains(booking.getPreferredTime()) && isValidWorkingHour(booking.getPreferredTime())) {
                 booking.setAllotedTime(booking.getPreferredTime());
+                logger.info("Making booking with preferred time...");
                 return bookingDao.createBooking(booking);
             }
             else {
@@ -39,11 +44,13 @@ public class BookingService {
                     preferredTime = tryNextSlot(preferredTime);
                 }
                 booking.setAllotedTime(preferredTime);
+                logger.info("Making booking with next available time...");
                 return bookingDao.createBooking(booking);
             }
         }
         else {
           booking.setAllotedTime(booking.getPreferredTime());
+            logger.info("Making booking with next available time...");
           return bookingDao.createBooking(booking);
         }
     }

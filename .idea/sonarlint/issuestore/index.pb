@@ -25,3 +25,5 @@ _
 /src/main/java/org/echs/database/BookingDao.java,d/c/dcc8c62079936db86f1ecc153ecb5d6c72d9cda8
 c
 3src/main/java/org/echs/resources/ManageBooking.java,f/c/fc20f0f9ac3603009d53182c2d4010c7abafca16
+_
+/src/main/java/org/echs/model/BookingEntity.java,4/4/44c0fe33a1f1937788d0a4212e398b79eadcc7e3

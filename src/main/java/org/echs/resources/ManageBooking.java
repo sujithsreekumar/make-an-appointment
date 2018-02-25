@@ -3,6 +3,8 @@ package org.echs.resources;
 import org.echs.model.Booking;
 import org.echs.model.BookingEntity;
 import org.echs.service.BookingService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -31,6 +33,7 @@ import static java.util.stream.Collectors.toList;
 @Produces(value = {MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 public class ManageBooking {
 
+    private static final Logger logger = LoggerFactory.getLogger(ManageBooking.class);
     BookingService bookingService = new BookingService();
 
     @GET
@@ -61,6 +64,7 @@ public class ManageBooking {
         if (now().isAfter(LocalTime.of(9, 0)) &&
                 now().isBefore(LocalTime.of(23, 59))) {
             BookingEntity bookingEntity = new BookingEntity(booking);
+            logger.info("Calling 'addBooking' service...");
             Booking newBooking = new Booking(bookingService.addBooking(bookingEntity));
             String newId = String.valueOf(newBooking.getId());
             URI uri = uriInfo.getAbsolutePathBuilder().path(newId).build();

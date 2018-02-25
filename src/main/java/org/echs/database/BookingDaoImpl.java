@@ -1,6 +1,8 @@
 package org.echs.database;
 
 import org.echs.model.BookingEntity;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookingDaoImpl implements BookingDao {
+    private static final Logger logger = LoggerFactory.getLogger(BookingDaoImpl.class);
 
     @Override
     public BookingEntity getBooking(long id) throws Exception {
@@ -51,6 +54,9 @@ public class BookingDaoImpl implements BookingDao {
 
             if (affectedRows == 0) {
                 throw new SQLException("Creating user failed, no rows affected.");
+            }
+            else {
+                logger.info("Created {} row ", affectedRows);
             }
 
             try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
