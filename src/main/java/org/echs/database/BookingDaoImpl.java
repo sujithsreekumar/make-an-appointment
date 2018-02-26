@@ -31,7 +31,7 @@ public class BookingDaoImpl implements BookingDao {
                 booking.setPatientName(rs.getString("patient_name"));
                 booking.setDoctorName(rs.getString("doctor_name"));
                 booking.setPreferredTime(rs.getTimestamp("preferred_time").toLocalDateTime());
-                booking.setAllotedTime(rs.getTimestamp("alloted_time").toLocalDateTime());
+                booking.setAllottedTime(rs.getTimestamp("allotted_time").toLocalDateTime());
             }
         } catch (Exception e) {
             //TODO handle exception
@@ -40,35 +40,73 @@ public class BookingDaoImpl implements BookingDao {
     }
 
     @Override
+    public List<BookingEntity> getBookingsForDoctor(String doctorName) throws Exception {
+        List<BookingEntity> bookings = new ArrayList<>();
+        Connection con = null;
+        PreparedStatement statement = null;
+        ResultSet rs = null;
+
+        String sql = "SELECT * FROM booking WHERE doctor_name = ? AND date = ?";
+        try {
+            con = Database.getConnection();
+            statement = con.prepareStatement(sql);
+            statement.setString(1, doctorName);
+            statement.setDate(2, Date.valueOf(LocalDate.now()));
+            rs = statement.executeQuery();
+            while (rs.next()) {
+                BookingEntity booking = new BookingEntity();
+                booking.setId(rs.getInt("id"));
+                booking.setPatientName(rs.getString("patient_name"));
+                booking.setDoctorName(rs.getString("doctor_name"));
+                booking.setDepartment(rs.getString("department"));
+                booking.setDate(rs.getDate("date").toLocalDate());
+                booking.setPreferredTime(rs.getTimestamp("preferred_time").toLocalDateTime());
+                booking.setAllottedTime(rs.getTimestamp("allotted_time").toLocalDateTime());
+                bookings.add(booking);
+            }
+        } catch (Exception e) {
+            //TODO handle exception
+        } finally {
+            if (statement != null) {
+                statement.close();
+            }
+            if (rs != null) {
+                rs.close();
+            }
+        }
+        return bookings;
+    }
+
+
+    @Override
     public BookingEntity createBooking(BookingEntity booking) throws Exception {
-        String sql = "INSERT INTO booking VALUES(DEFAULT,?,?,?,?,?)";
+        String sql = "INSERT INTO booking VALUES(DEFAULT,?,?,?,?,?,?)";
         try (Connection con = Database.getConnection();
              PreparedStatement statement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, booking.getPatientName());
             statement.setString(2, booking.getDoctorName());
-            statement.setDate(3, Date.valueOf(booking.getDate()));
-            statement.setTimestamp(4, Timestamp.valueOf(booking.getPreferredTime()));
-            statement.setTimestamp(5, Timestamp.valueOf(booking.getAllotedTime()));
+            statement.setString(3, booking.getDepartment());
+            statement.setDate(4, Date.valueOf(booking.getDate()));
+            statement.setTimestamp(5, Timestamp.valueOf(booking.getPreferredTime()));
+            statement.setTimestamp(6, Timestamp.valueOf(booking.getAllottedTime()));
 
             int affectedRows = statement.executeUpdate();
 
             if (affectedRows == 0) {
                 throw new SQLException("Creating user failed, no rows affected.");
-            }
-            else {
+            } else {
                 logger.info("Created {} row ", affectedRows);
             }
 
             try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
                 if (generatedKeys.next()) {
                     booking.setId(generatedKeys.getLong(1));
-                }
-                else {
+                } else {
                     throw new SQLException("Creating user failed, no ID obtained.");
                 }
             }
         } catch (SQLException e) {
-            //TODO handle exception
+            e.printStackTrace();
         }
         return booking;
     }
@@ -78,17 +116,19 @@ public class BookingDaoImpl implements BookingDao {
         String sql = "UPDATE booking SET" +
                 "patient_name = ?" +
                 "doctor_name = ?" +
+                "department = ?" +
                 "date = ?" +
                 "preferred_time = ?" +
-                "alloted_time = ?" +
+                "allotted_time = ?" +
                 " where id = " + booking.getId();
         try (Connection con = Database.getConnection();
              PreparedStatement statement = con.prepareStatement(sql)) {
             statement.setString(1, booking.getPatientName());
             statement.setString(2, booking.getDoctorName());
-            statement.setDate(3, Date.valueOf(booking.getDate()));
-            statement.setTimestamp(3, Timestamp.valueOf(booking.getPreferredTime()));
-            statement.setTimestamp(4, Timestamp.valueOf(booking.getAllotedTime()));
+            statement.setString(3, booking.getDepartment());
+            statement.setDate(4, Date.valueOf(booking.getDate()));
+            statement.setTimestamp(5, Timestamp.valueOf(booking.getPreferredTime()));
+            statement.setTimestamp(6, Timestamp.valueOf(booking.getAllottedTime()));
             statement.executeUpdate();
         } catch (Exception e) {
             //TODO handle exception
@@ -102,7 +142,7 @@ public class BookingDaoImpl implements BookingDao {
     }
 
     @Override
-    public List<BookingEntity> getAllBookings(LocalDate today) throws Exception {
+    public List<BookingEntity> getAllBookingsByDate(LocalDate today) throws Exception {
         List<BookingEntity> bookings = new ArrayList<>();
         Connection con = null;
         PreparedStatement statement = null;
@@ -119,9 +159,10 @@ public class BookingDaoImpl implements BookingDao {
                 booking.setId(rs.getInt("id"));
                 booking.setPatientName(rs.getString("patient_name"));
                 booking.setDoctorName(rs.getString("doctor_name"));
+                booking.setDepartment(rs.getString("department"));
                 booking.setDate(rs.getDate("date").toLocalDate());
                 booking.setPreferredTime(rs.getTimestamp("preferred_time").toLocalDateTime());
-                booking.setAllotedTime(rs.getTimestamp("alloted_time").toLocalDateTime());
+                booking.setAllottedTime(rs.getTimestamp("allotted_time").toLocalDateTime());
                 bookings.add(booking);
             }
         } catch (SQLException e) {

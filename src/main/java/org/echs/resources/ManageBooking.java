@@ -39,17 +39,23 @@ public class ManageBooking {
     @GET
     public Response getBookings() throws Exception {
         List<BookingEntity> bookingEntities = bookingService.getBookings();
-        List<Booking> bookings = bookingEntities.stream()
-                .map(Booking::new)
-                .collect(toList());
+        List<Booking> bookings = mapToBooking(bookingEntities);
         return Response.status(Response.Status.OK).entity(bookings).tag("found").build();
     }
 
+//    @GET
+//    @Path("/{bookingId}")
+//    public Response getBooking(@PathParam("bookingId") long bookingId) throws Exception {
+//        BookingEntity booking = bookingService.getBooking(bookingId);
+//        return Response.status(Response.Status.OK).entity(booking).tag("found").build();
+//    }
+
     @GET
-    @Path("/{bookingId}")
-    public Response getBooking(@PathParam("bookingId") long bookingId) throws Exception {
-        BookingEntity booking = bookingService.getBooking(bookingId);
-        return Response.status(Response.Status.OK).entity(booking).tag("found").build();
+    @Path("/{doctorName}")
+    public Response getBooking(@PathParam("doctorName") String doctorName) throws Exception {
+        List<BookingEntity> bookingEntities = bookingService.getBookings(doctorName);
+        List<Booking> bookings = mapToBooking(bookingEntities);
+        return Response.status(Response.Status.OK).entity(bookings).tag("found").build();
     }
 
     @POST
@@ -97,6 +103,12 @@ public class ManageBooking {
     public Response deleteBooking(@PathParam("bookingId") long id) throws Exception {
         bookingService.remove(id);
         return Response.status(Response.Status.OK).tag("deleted").build();
+    }
+
+    private List<Booking> mapToBooking(List<BookingEntity> bookingEntities) {
+        return bookingEntities.stream()
+                .map(Booking::new)
+                .collect(toList());
     }
 
 }

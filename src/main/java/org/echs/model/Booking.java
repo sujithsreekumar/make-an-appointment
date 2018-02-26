@@ -7,9 +7,10 @@ public class Booking {
     private long id;
     private String patientName;
     private String doctorName;
+    private String department;
     private String date;
     private String preferredTime;
-    private String allotedTime;
+    private String allottedTime;
 
     public Booking() {
     }
@@ -18,9 +19,10 @@ public class Booking {
         this.id = bookingEntity.getId();
         this.patientName = bookingEntity.getPatientName();
         this.doctorName = bookingEntity.getDoctorName();
+        this.department = bookingEntity.getDepartment();
         this.date = bookingEntity.getDate().toString();
         this.preferredTime = bookingEntity.getPreferredTime().toLocalTime().toString();
-        this.allotedTime = bookingEntity.getAllotedTime().toLocalTime().toString();
+        this.allottedTime = bookingEntity.getAllottedTime().toLocalTime().toString();
     }
 
     public long getId() {
@@ -47,6 +49,14 @@ public class Booking {
         this.doctorName = doctorName;
     }
 
+    public String getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
     public String getDate() {
         return date;
     }
@@ -63,11 +73,11 @@ public class Booking {
         this.preferredTime = preferredTime;
     }
 
-    public String getAllotedTime() {
-        return allotedTime;
+    public String getAllottedTime() {
+        return allottedTime;
     }
 
-    public void setAllotedTime(String allotedTime) {
-        this.allotedTime = allotedTime;
+    public void setAllottedTime(String allottedTime) {
+        this.allottedTime = allottedTime;
     }
 }

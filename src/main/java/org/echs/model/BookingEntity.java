@@ -12,9 +12,10 @@ public class BookingEntity {
     private long id;
     private String patientName;
     private String doctorName;
+    private String department;
     private LocalDate date;
     private LocalDateTime preferredTime;
-    private LocalDateTime allotedTime;
+    private LocalDateTime allottedTime;
 
     public BookingEntity() {
     }
@@ -23,15 +24,16 @@ public class BookingEntity {
         this.id = booking.getId();
         this.patientName = booking.getPatientName();
         this.doctorName = booking.getDoctorName();
+        this.department = booking.getDepartment();
         this.date = LocalDate.now();
         if (isNotEmpty(booking.getPreferredTime())) {
             this.preferredTime = LocalDateTime.of(LocalDate.now(),
                     LocalTime.parse(booking.getPreferredTime(), DateTimeFormatter.ISO_LOCAL_TIME));
         } else {
-            this.preferredTime = LocalDate.now().atTime(9,0,0);
+            this.preferredTime = LocalDate.now().atTime(9,30,0);
         }
-        this.allotedTime = isEmpty(booking.getAllotedTime()) ? null : LocalDateTime.of(LocalDate.now(),
-                LocalTime.parse(booking.getAllotedTime(), DateTimeFormatter.ISO_LOCAL_TIME));
+        this.allottedTime = isEmpty(booking.getAllottedTime()) ? null : LocalDateTime.of(LocalDate.now(),
+                LocalTime.parse(booking.getAllottedTime(), DateTimeFormatter.ISO_LOCAL_TIME));
     }
 
     public long getId() {
@@ -54,9 +56,11 @@ public class BookingEntity {
         return doctorName;
     }
 
-    public void setDoctorName(String doctorName) {
-        this.doctorName = doctorName;
-    }
+    public void setDoctorName(String doctorName) { this.doctorName = doctorName; }
+
+    public String getDepartment() { return department; }
+
+    public void setDepartment(String department) { this.department = department; }
 
     public LocalDate getDate() { return date; }
 
@@ -70,11 +74,11 @@ public class BookingEntity {
         this.preferredTime = preferredTime;
     }
 
-    public LocalDateTime getAllotedTime() {
-        return allotedTime;
+    public LocalDateTime getAllottedTime() {
+        return allottedTime;
     }
 
-    public void setAllotedTime(LocalDateTime allotedTime) {
-        this.allotedTime = allotedTime;
+    public void setAllottedTime(LocalDateTime allottedTime) {
+        this.allottedTime = allottedTime;
     }
 }
