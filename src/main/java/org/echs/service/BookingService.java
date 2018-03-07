@@ -3,6 +3,9 @@ package org.echs.service;
 import org.apache.commons.lang3.StringUtils;
 import org.echs.database.BookingDao;
 import org.echs.database.BookingDaoImpl;
+import org.echs.database.LeaveDao;
+import org.echs.database.LeaveDaoImpl;
+import org.echs.exception.BookingException;
 import org.echs.exception.InvalidInputException;
 import org.echs.model.BookingEntity;
 import org.echs.model.Doctor;
@@ -11,6 +14,7 @@ import org.slf4j.LoggerFactory;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 import java.util.Random;
 
@@ -19,12 +23,17 @@ import static java.util.stream.Collectors.toList;
 
 public class BookingService {
     private static final Logger logger = LoggerFactory.getLogger(BookingService.class);
-    private final LocalDateTime DAY_START = LocalDate.now().atTime(9, 30, 0);
-    private final LocalDateTime DAY_END = LocalDate.now().atTime(13, 30, 0);
+    private final LocalDateTime DAY_START = LocalDate.now(ZoneId.of("Asia/Kolkata")).atTime(10, 00, 0);
+    private final LocalDateTime DAY_END = LocalDate.now(ZoneId.of("Asia/Kolkata")).atTime(12, 00, 0);
     BookingDao bookingDao = new BookingDaoImpl();
+    LeaveDao leaveDao = new LeaveDaoImpl();
 
     public List<BookingEntity> getBookings() throws Exception {
-        return bookingDao.getAllBookingsByDate(LocalDateTime.now().toLocalDate());
+        return bookingDao.getAllBookingsByDate(LocalDateTime.now(ZoneId.of("Asia/Kolkata")).toLocalDate());
+    }
+
+    public void generateReport() throws Exception {
+        bookingDao.generateReport();
     }
 
     public BookingEntity getBooking(long id) throws Exception {
@@ -40,9 +49,9 @@ public class BookingService {
     public BookingEntity addBooking(BookingEntity booking) throws Exception {
         String patientName = booking.getPatientName();
         String doctorName = booking.getDoctorName();
-        String department = booking.getDepartment();
+        String department = booking.getDepartment().toUpperCase();
 
-        if (patientName.isEmpty()) {
+        if (StringUtils.isEmpty(patientName)) {
             throw new InvalidInputException("You must specify Patient name");
         }
 
@@ -52,8 +61,8 @@ public class BookingService {
         }
         LocalDateTime preferredTime = booking.getPreferredTime();
 
-        if (StringUtils.isNotEmpty(doctorName)) {
-            Doctor doc = Doctor.fromDoctorName(doctorName);
+        if (StringUtils.isNotEmpty(doctorName) && !leaveDao.isOnLeave(doctorName, department)) {
+            Doctor doc = Doctor.fromDoctorName(doctorName.toUpperCase());
             List<LocalDateTime> fullSlots = getFullSlots(doc.getConsultationDuration());
 
             List<String> doctorNames = doc.getDoctorNames();
@@ -68,13 +77,35 @@ public class BookingService {
             List<LocalDateTime> fullSlots = getFullSlots(doc.getConsultationDuration());
 
             List<String> doctorNames = doc.getDoctorNames();
+
+            if (doctorNames.stream()
+                    .allMatch(docName -> {
+                        try {
+                            return leaveDao.isOnLeave(docName, department);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            return true;
+                        }
+                    })) {
+                throw new BookingException("No doctor available today from this department");
+            }
+
             doctorName = doctorNames.get(new Random().nextInt(doctorNames.size()));
 
+            while (leaveDao.isOnLeave(doctorName, department)) {
+                doctorName = doctorNames.get(new Random().nextInt(doctorNames.size()));
+            }
+
             List<LocalDateTime> freeSlots = getFreeSlots(doctorName, fullSlots, doctorNames);
+            if (freeSlots.isEmpty()) {
+                throw new BookingException("Sorry, bookings are full for the day for this department.");
+            }
 
             allotTime(booking, preferredTime, freeSlots);
         }
+        booking.setDepartment(department);
         booking.setDoctorName(doctorName);
+        booking.setDate(LocalDate.now(ZoneId.of("Asia/Kolkata")));
         return bookingDao.createBooking(booking);
     }
 
@@ -95,7 +126,7 @@ public class BookingService {
 
     private void allotTime(BookingEntity booking, LocalDateTime preferredTime, List<LocalDateTime> freeSlots) {
         if (null != preferredTime) {
-            if (freeSlots.contains(preferredTime)) {
+            if ( freeSlots.contains(preferredTime)) {
                 logger.info("Making booking with preferred time...");
                 booking.setAllottedTime(booking.getPreferredTime());
             } else {

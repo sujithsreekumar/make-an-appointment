@@ -10,8 +10,9 @@ import javax.ws.rs.ext.Provider;
 public class DataNotFoundExceptionMapper implements ExceptionMapper<DataNotFoundException>{
     @Override
     public Response toResponse(DataNotFoundException e) {
-        ErrorMessage errorMessage = new ErrorMessage(e.getMessage(), 404, "http://echs.org");
-        return Response.status(Response.Status.NOT_FOUND)
+        ErrorMessage errorMessage = new ErrorMessage(e.getMessage(), 200,
+                "http://echs.gov.in/img/contact/kochi.html");
+        return Response.status(Response.Status.OK)
                 .entity(errorMessage)
                 .build();
     }

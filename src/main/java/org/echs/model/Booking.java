@@ -5,6 +5,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Booking {
     private long id;
+    private String serviceNumber;
     private String patientName;
     private String doctorName;
     private String department;
@@ -17,6 +18,7 @@ public class Booking {
 
     public Booking(BookingEntity bookingEntity) {
         this.id = bookingEntity.getId();
+        this.serviceNumber = bookingEntity.getServiceNumber();
         this.patientName = bookingEntity.getPatientName();
         this.doctorName = bookingEntity.getDoctorName();
         this.department = bookingEntity.getDepartment();
@@ -31,6 +33,14 @@ public class Booking {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getServiceNumber() {
+        return serviceNumber;
+    }
+
+    public void setServiceNumber(String serviceNumber) {
+        this.serviceNumber = serviceNumber;
     }
 
     public String getPatientName() {
@@ -79,5 +89,17 @@ public class Booking {
 
     public void setAllottedTime(String allottedTime) {
         this.allottedTime = allottedTime;
+    }
+
+    @Override
+    public String toString() {
+        return  "id=" + id +
+                ", serviceNumber='" + serviceNumber + '\'' +
+                ", patientName='" + patientName + '\'' +
+                ", doctorName='" + doctorName + '\'' +
+                ", department='" + department + '\'' +
+                ", date='" + date + '\'' +
+                ", preferredTime='" + preferredTime + '\'' +
+                ", allottedTime='" + allottedTime + '\'' ;
     }
 }

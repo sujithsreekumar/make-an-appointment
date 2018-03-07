@@ -19,4 +19,6 @@ public interface BookingDao {
 
     BookingEntity deleteBooking(long id);
 
+    void generateReport() throws Exception;
+
 }

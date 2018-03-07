@@ -1,7 +1,13 @@
 
-Ssquid:S1135"2Complete the task associated to this TODO comment.(Ì›Áûÿÿÿÿ8€¨¿ëœ,
-nsquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(€’Í“8€¨¿ëœ,
-Ssquid:S1135"2Complete the task associated to this TODO comment.(Ì›Áûÿÿÿÿ8€¨¿ëœ,
-Ssquid:S1135"2Complete the task associated to this TODO comment.(Ì›Áûÿÿÿÿ8€¨¿ëœ,
-csquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(èÙƒì8€¨¿ëœ,
-Ssquid:S1135"2Complete the task associated to this TODO comment.(Ì›Áûÿÿÿÿ8€¨¿ëœ,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8úÑ¨Ô,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(Ì›Áûÿÿÿÿ8úÑ¨Ô,
+psquid:S1192"ODefine a constant instead of duplicating this literal "preferred_time" 3 times.(¿…Òõùÿÿÿÿ8úÑ¨Ô,
+nsquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(€’Í“8úÑ¨Ô,
+csquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(èÙƒì8úÑ¨Ô,
+osquid:S1192"NDefine a constant instead of duplicating this literal "allotted_time" 3 times.(í³Ö–ıÿÿÿÿ8úÑ¨Ô,
+csquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(èÙƒì8úÑ¨Ô,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(Ì›Áûÿÿÿÿ8úÑ¨Ô,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(Ì›Áûÿÿÿÿ8úÑ¨Ô,
+Ssquid:S1135"2Complete the task associated to this TODO comment.(Ì›Áûÿÿÿÿ8úÑ¨Ô,
+msquid:S1192"LDefine a constant instead of duplicating this literal "doctor_name" 3 times.(ÎÅŞ¤øÿÿÿÿ8úÑ¨Ô,
+nsquid:S1192"MDefine a constant instead of duplicating this literal "patient_name" 3 times.(¢‰Ğ¢ùÿÿÿÿ8úÑ¨Ô,

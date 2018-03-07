@@ -10,8 +10,9 @@ import javax.ws.rs.ext.Provider;
 public class GenericExceptionMapper implements ExceptionMapper<Throwable> {
     @Override
     public Response toResponse(Throwable throwable) {
-        ErrorMessage errorMessage = new ErrorMessage(throwable.getMessage(), 500, "http://echs.org");
-        return Response.status(Response.Status.INTERNAL_SERVER_ERROR)
+        ErrorMessage errorMessage = new ErrorMessage(throwable.getMessage(), 200,
+                "http://echs.gov.in/img/contact/kochi.html");
+        return Response.status(Response.Status.OK)
                 .entity(errorMessage)
                 .build();
     }

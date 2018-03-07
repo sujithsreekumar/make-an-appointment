@@ -1,10 +1,9 @@
 
-vsquid:S00116"TRename this field "DAY_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠòÇ‘øÿÿÿÿ8€¨¿ëœ,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¼ğÖ¸úÿÿÿÿ8€¨¿ëœ,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(£õ÷÷øÿÿÿÿ8€¨¿ëœ,
-rsquid:S00116"VRename this field "LUNCH_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä›¦ 8€¨¿ëœ,
-§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¼ğÖ¸úÿÿÿÿ8€¨¿ëœ,
-Hsquid:S1612",Replace this lambda with a method reference.(•Òş8€¨¿ëœ,
-vsquid:S00116"TRename this field "LUNCH_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ®õ†ûÿÿÿÿ8€¨¿ëœ,
-tsquid:S00116"RRename this field "DAY_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¾ÙÒÿÿÿÿÿ8€¨¿ëœ,
-§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(£õ÷÷øÿÿÿÿ8€¨¿ëœ,
+qsquid:S00116"TRename this field "DAY_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡¾§–8¬¥•,
+§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¼ğÖ¸úÿÿÿÿ8¬¥•,
+§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(£õ÷÷øÿÿÿÿ8¬¥•,
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(£õ÷÷øÿÿÿÿ8¬¥•,
+tsquid:S00116"RRename this field "DAY_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È³ÄÈûÿÿÿÿ8¬¥•,
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¼ğÖ¸úÿÿÿÿ8¬¥•,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¬¥•,
+Msquid:S1612",Replace this lambda with a method reference.(º¹¶Úüÿÿÿÿ8¬¥•,

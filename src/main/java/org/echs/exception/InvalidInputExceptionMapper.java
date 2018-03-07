@@ -10,8 +10,9 @@ import javax.ws.rs.ext.Provider;
 public class InvalidInputExceptionMapper implements ExceptionMapper<InvalidInputException> {
     @Override
     public Response toResponse(InvalidInputException e) {
-        ErrorMessage errorMessage = new ErrorMessage(e.getMessage(), 422, "http://echs.org");
-        return Response.status(Response.Status.NOT_FOUND)
+        ErrorMessage errorMessage = new ErrorMessage(e.getMessage(), 200,
+                "http://echs.gov.in/img/contact/kochi.html");
+        return Response.status(Response.Status.OK)
                 .entity(errorMessage)
                 .build();
     }

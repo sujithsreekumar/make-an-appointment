@@ -2,7 +2,10 @@ package org.echs.resources;
 
 import org.echs.model.Booking;
 import org.echs.model.BookingEntity;
+import org.echs.model.ErrorMessage;
+import org.echs.model.Holiday;
 import org.echs.service.BookingService;
+import org.echs.service.HolidayService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,21 +23,22 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import java.net.URI;
 import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
+import java.time.temporal.TemporalAdjusters;
 import java.util.List;
 
-import static java.time.LocalTime.now;
 import static java.util.stream.Collectors.toList;
 
 @Path("/bookings")
-@Consumes(MediaType.APPLICATION_JSON)
 @Produces(value = {MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
 public class ManageBooking {
 
     private static final Logger logger = LoggerFactory.getLogger(ManageBooking.class);
     BookingService bookingService = new BookingService();
+    HolidayService holidayService = new HolidayService();
 
     @GET
     public Response getBookings() throws Exception {
@@ -43,12 +47,6 @@ public class ManageBooking {
         return Response.status(Response.Status.OK).entity(bookings).tag("found").build();
     }
 
-//    @GET
-//    @Path("/{bookingId}")
-//    public Response getBooking(@PathParam("bookingId") long bookingId) throws Exception {
-//        BookingEntity booking = bookingService.getBooking(bookingId);
-//        return Response.status(Response.Status.OK).entity(booking).tag("found").build();
-//    }
 
     @GET
     @Path("/{doctorName}")
@@ -60,15 +58,18 @@ public class ManageBooking {
 
     @POST
     @Path("/make")
+    @Consumes({MediaType.APPLICATION_JSON})
     public Response makeBooking(Booking booking, @Context UriInfo uriInfo) throws Exception {
-        if (LocalDateTime.now().atZone(ZoneId.systemDefault()).getDayOfWeek().equals(DayOfWeek.SATURDAY)) {
+        if (LocalDateTime.now(ZoneId.of("Asia/Kolkata")).getDayOfWeek().equals(DayOfWeek.SUNDAY) ||
+                isPublicHoliday() || isLastDayOfTheMonth()) {
             return Response.status(Response.Status.NOT_ACCEPTABLE)
-                    .entity("Sorry.. No OPs on Sundays and public holidays")
+                    .entity(new ErrorMessage("Sorry.. No OPs on Sundays and public holidays",
+                            406, "http://echs.gov.in/img/contact/kochi.html"))
                     .tag("No OP today")
                     .build();
         }
-        if (now().isAfter(LocalTime.of(9, 0)) &&
-                now().isBefore(LocalTime.of(23, 59))) {
+        if (LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(0, 01)) &&
+                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(23, 59))) {
             BookingEntity bookingEntity = new BookingEntity(booking);
             logger.info("Calling 'addBooking' service...");
             Booking newBooking = new Booking(bookingService.addBooking(bookingEntity));
@@ -78,17 +79,19 @@ public class ManageBooking {
                     .entity(newBooking)
                     .tag("Confirmed")
                     .build();
-
         } else {
             return Response.status(Response.Status.NOT_ACCEPTABLE)
-                    .entity("You can make your bookings only between 6 AM and 9AM")
+                    .entity(new ErrorMessage("You can make your booking only between 0600 and 0800 Hrs",
+                            406, "http://echs.gov.in/img/contact/kochi.html"))
                     .tag("Time window not open")
                     .build();
         }
     }
 
+
     @PUT
     @Path("/{bookingId}")
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response updateBooking(@PathParam("bookingId") long id, Booking booking) throws Exception {
         booking.setId(id);
         bookingService.update(new BookingEntity(booking));
@@ -100,6 +103,7 @@ public class ManageBooking {
 
     @DELETE
     @Path("/{bookingId}")
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response deleteBooking(@PathParam("bookingId") long id) throws Exception {
         bookingService.remove(id);
         return Response.status(Response.Status.OK).tag("deleted").build();
@@ -109,6 +113,17 @@ public class ManageBooking {
         return bookingEntities.stream()
                 .map(Booking::new)
                 .collect(toList());
+    }
+
+    private boolean isPublicHoliday() throws Exception {
+        return holidayService.getHolidaysList().stream()
+                .map(Holiday::getDate)
+                .anyMatch(date -> String.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata"))).equals(date));
+    }
+
+    private boolean isLastDayOfTheMonth() {
+        return LocalDate.now(ZoneId.of("Asia/Kolkata")).with(TemporalAdjusters.lastDayOfMonth())
+                .equals(LocalDate.now(ZoneId.of("Asia/Kolkata")));
     }
 
 }

@@ -9,8 +9,7 @@ import static java.util.Arrays.asList;
 
 public enum Doctor {
     MED_SPLST("MED_SPLST", asList("Dr. Raichu", "Dr. Joseph"), 8),
-    GEN_MED_SURG("GEN_MED_SURG", asList("Dr. Koshy"), 5),
-    GEN_MED("GEN_MED", asList("Dr. Koshy", "Dr. Beena", "Dr. Umadevi", "Dr. Anu"), 5),
+    GEN_MED("GEN_MED", asList("Dr. Beena", "Dr. Umadevi", "Dr. Anju"), 5),
     DENTAL("DENTAL", asList("Dr. Manavi", "Dr. Krishan"), 15);
 
     private String department;
@@ -52,9 +51,14 @@ public enum Doctor {
 
     public static Doctor fromDoctorName(String doctorName) {
         return Stream.of(Doctor.values())
-                .filter(doctor -> doctor.getDoctorNames().contains(doctorName))
+                .filter(doctor -> checkIfPresent(doctorName, doctor))
                 .findFirst()
                 .orElseThrow(() -> new DataNotFoundException("Doctor name is not valid"));
+    }
+
+    private static boolean checkIfPresent(String doctorName, Doctor doctor) {
+        return doctor.getDoctorNames().stream()
+                .anyMatch(doctorName::equalsIgnoreCase);
     }
 
 
