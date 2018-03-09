@@ -16,9 +16,9 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 @Path("/appointments")
-public class Report {
+public class ReportResource {
 
-    private static final Logger logger = LoggerFactory.getLogger(Report.class);
+    private static final Logger logger = LoggerFactory.getLogger(ReportResource.class);
     BookingService bookingService = new BookingService();
 
 
