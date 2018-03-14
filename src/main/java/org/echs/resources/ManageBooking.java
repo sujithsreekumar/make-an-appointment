@@ -68,9 +68,8 @@ public class ManageBooking {
                     .tag("No OP today")
                     .build();
         }
-        if ((LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(6, 0, 0)) &&
-                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(8, 0,0)))
-                || booking.getServiceNumber().equalsIgnoreCase("89102B")) {
+        if (LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(6, 0, 0)) &&
+                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(8, 0,0))) {
             BookingEntity bookingEntity = new BookingEntity(booking);
             logger.info("Calling 'addBooking' service...");
             Booking newBooking = new Booking(bookingService.addBooking(bookingEntity));
