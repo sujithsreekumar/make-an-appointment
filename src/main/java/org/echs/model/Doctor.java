@@ -8,9 +8,9 @@ import java.util.stream.Stream;
 import static java.util.Arrays.asList;
 
 public enum Doctor {
-    MED_SPLST("MED_SPLST", asList("Dr. Raichu", "Dr. Joseph"), 8),
-    GEN_MED("GEN_MED", asList("Dr. Beena", "Dr. Umadevi", "Dr. Anju"), 5),
-    DENTAL("DENTAL", asList("Dr. Manavi", "Dr. Krishan"), 15);
+    MED_SPLST("MED_SPLST", asList("DR.RAICHU", "DR.JOSEPH"), 8),
+    GEN_MED("GEN_MED", asList("DR.BEENA", "DR.UMADEVI", "DR.ANJU"), 5),
+    DENTAL("DENTAL", asList("DR.MANAVI", "DR.KRISHAN"), 15);
 
     private String department;
     private List<String> doctorNames;

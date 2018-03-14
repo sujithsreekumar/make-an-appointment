@@ -1,0 +1,15 @@
+
+_squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(²ûV
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ª½º
+€squid:S1319"kThe type of the "map" object should be an interface such as "Map" rather than the implementation "HashMap".(³öë…
+…squid:S1319"kThe type of the "map" object should be an interface such as "Map" rather than the implementation "HashMap".(ù÷±úÿÿÿÿ
+Osquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Osquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Osquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+8squid:S1148"#Use a logger to log this exception.(Ç’Çê
+:squid:S1948"%Make "con" transient or serializable.(¶‹ïÒ
+csquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(Ç‰Ã

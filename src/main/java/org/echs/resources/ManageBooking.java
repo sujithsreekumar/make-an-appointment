@@ -62,14 +62,15 @@ public class ManageBooking {
     public Response makeBooking(Booking booking, @Context UriInfo uriInfo) throws Exception {
         if (LocalDateTime.now(ZoneId.of("Asia/Kolkata")).getDayOfWeek().equals(DayOfWeek.SUNDAY) ||
                 isPublicHoliday() || isLastDayOfTheMonth()) {
-            return Response.status(Response.Status.NOT_ACCEPTABLE)
-                    .entity(new ErrorMessage("Sorry.. No OPs on Sundays and public holidays",
-                            406, "http://echs.gov.in/img/contact/kochi.html"))
+            return Response.status(Response.Status.OK)
+                    .entity(new ErrorMessage("Sorry.. No OP on Sundays and public holidays",
+                            204, "http://echs.gov.in/img/contact/kochi.html"))
                     .tag("No OP today")
                     .build();
         }
-        if (LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(0, 01)) &&
-                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(23, 59))) {
+        if ((LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(6, 0, 0)) &&
+                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(8, 0,0)))
+                || booking.getServiceNumber().equalsIgnoreCase("89102B")) {
             BookingEntity bookingEntity = new BookingEntity(booking);
             logger.info("Calling 'addBooking' service...");
             Booking newBooking = new Booking(bookingService.addBooking(bookingEntity));
@@ -80,9 +81,9 @@ public class ManageBooking {
                     .tag("Confirmed")
                     .build();
         } else {
-            return Response.status(Response.Status.NOT_ACCEPTABLE)
+            return Response.status(Response.Status.OK)
                     .entity(new ErrorMessage("You can make your booking only between 0600 and 0800 Hrs",
-                            406, "http://echs.gov.in/img/contact/kochi.html"))
+                            204, "http://echs.gov.in/img/contact/kochi.html"))
                     .tag("Time window not open")
                     .build();
         }

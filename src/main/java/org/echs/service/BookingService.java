@@ -46,7 +46,7 @@ public class BookingService {
         return bookingDao.getBookingsForDoctor(doctorName);
     }
 
-    public BookingEntity addBooking(BookingEntity booking) throws Exception {
+    public synchronized BookingEntity addBooking(BookingEntity booking) throws Exception {
         String patientName = booking.getPatientName();
         String doctorName = booking.getDoctorName();
         String department = booking.getDepartment().toUpperCase();
@@ -131,7 +131,38 @@ public class BookingService {
                 booking.setAllottedTime(booking.getPreferredTime());
             } else {
                 logger.info("Making booking with system allotted time...");
-                booking.setAllottedTime(freeSlots.get(0));
+//                booking.setAllottedTime(freeSlots.get(0));
+                boolean reachedEOD = false;
+                boolean reachedSOD = false;
+                boolean slotFound = false;
+                LocalDateTime tempPreferredTimeObj = preferredTime;
+                while (!freeSlots.contains(tempPreferredTimeObj) && !reachedEOD) {
+                    tempPreferredTimeObj = tempPreferredTimeObj.plusMinutes(1);
+                    if (tempPreferredTimeObj.isEqual(DAY_END) || tempPreferredTimeObj.isAfter(DAY_END)) {
+                        reachedEOD = true;
+                        break;
+                    }
+                    if (freeSlots.contains(tempPreferredTimeObj)) {
+                        slotFound = true;
+                        break;
+                    }
+                }
+                if (reachedEOD && !slotFound) {
+                    tempPreferredTimeObj = preferredTime;
+                    while (!freeSlots.contains(tempPreferredTimeObj) && !reachedSOD) {
+                        tempPreferredTimeObj = tempPreferredTimeObj.minusMinutes(1);
+                        if (tempPreferredTimeObj.isEqual(DAY_START) || tempPreferredTimeObj.isBefore(DAY_START)) {
+                            reachedSOD = true;
+                            break;
+                        }
+                    }
+                }
+                if (reachedSOD && reachedEOD) {
+                    String message = "Was supposed to find a slot, but couldn't. This is supposed to be a synchronized operation.";
+                    logger.error(message);
+                    throw new BookingException(message);
+                }
+                booking.setAllottedTime(tempPreferredTimeObj);
             }
         } else {
             logger.info("Making booking with system allotted time...");
