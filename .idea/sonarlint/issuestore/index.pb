@@ -47,3 +47,5 @@ d
 4src/main/java/org/echs/resources/ManageHolidays.java,d/c/dc550c67285ce5e40cb54f6f3ec504c4a98481fc
 d
 4src/main/java/org/echs/resources/ReportResource.java,5/f/5ff304088f3b2c5138202dffda67cf273ff10e9e
+a
+1src/main/java/org/echs/database/LeaveDaoImpl.java,6/6/661ec528b1b2a0741feb9baf72ba356c40f4e9a9

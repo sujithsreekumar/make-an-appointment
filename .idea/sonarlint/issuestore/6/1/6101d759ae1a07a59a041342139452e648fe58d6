@@ -1,4 +1,8 @@
 
 Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8„«Á«,
-csquid:S2095"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(èÙƒì8„«Á«,
-Ssquid:S1135"2Complete the task associated to this TODO comment.(Ì›Áûÿÿÿÿ8„«Á«,
+\squid:S2259"@A "NullPointerException" could be thrown; "rs" is nullable here.(ÅÌ”Ù8Áè‹£¢,
+`squid:S2147"DCombine this catch with the one at line 39, which has the same body.(”ı¾8Áè‹£¢,
+`squid:S2147"DCombine this catch with the one at line 68, which has the same body.(”ı¾8Áè‹£¢,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Áè‹£¢,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Áè‹£¢,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Áè‹£¢,

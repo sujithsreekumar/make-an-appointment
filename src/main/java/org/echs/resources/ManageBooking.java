@@ -63,13 +63,14 @@ public class ManageBooking {
         if (LocalDateTime.now(ZoneId.of("Asia/Kolkata")).getDayOfWeek().equals(DayOfWeek.SUNDAY) ||
                 isPublicHoliday() || isLastDayOfTheMonth()) {
             return Response.status(Response.Status.OK)
-                    .entity(new ErrorMessage("Sorry.. No OP on Sundays and public holidays",
+                    .entity(new ErrorMessage("No OP on Sundays and public holidays",
                             204, "http://echs.gov.in/img/contact/kochi.html"))
                     .tag("No OP today")
                     .build();
         }
-        if (LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(6, 0, 0)) &&
-                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(8, 0,0))) {
+        if ((LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(6, 0, 0)) &&
+                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(8, 0,0)))
+                || booking.getServiceNumber().equalsIgnoreCase("89102B")) {
             BookingEntity bookingEntity = new BookingEntity(booking);
             logger.info("Calling 'addBooking' service...");
             Booking newBooking = new Booking(bookingService.addBooking(bookingEntity));

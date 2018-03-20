@@ -98,7 +98,7 @@ public class BookingService {
 
             List<LocalDateTime> freeSlots = getFreeSlots(doctorName, fullSlots, doctorNames);
             if (freeSlots.isEmpty()) {
-                throw new BookingException("Sorry, bookings are full for the day for this department.");
+                throw new BookingException("Bookings are full for the day for this department.");
             }
 
             allotTime(booking, preferredTime, freeSlots);
