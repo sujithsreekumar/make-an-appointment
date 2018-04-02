@@ -126,12 +126,11 @@ public class BookingService {
 
     private void allotTime(BookingEntity booking, LocalDateTime preferredTime, List<LocalDateTime> freeSlots) {
         if (null != preferredTime) {
-            if ( freeSlots.contains(preferredTime)) {
+            if (freeSlots.contains(preferredTime)) {
                 logger.info("Making booking with preferred time...");
                 booking.setAllottedTime(booking.getPreferredTime());
             } else {
                 logger.info("Making booking with system allotted time...");
-//                booking.setAllottedTime(freeSlots.get(0));
                 boolean reachedEOD = false;
                 boolean reachedSOD = false;
                 boolean slotFound = false;

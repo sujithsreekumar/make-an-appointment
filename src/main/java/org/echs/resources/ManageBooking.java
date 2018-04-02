@@ -61,7 +61,7 @@ public class ManageBooking {
     @Consumes({MediaType.APPLICATION_JSON})
     public Response makeBooking(Booking booking, @Context UriInfo uriInfo) throws Exception {
         if (LocalDateTime.now(ZoneId.of("Asia/Kolkata")).getDayOfWeek().equals(DayOfWeek.SUNDAY) ||
-                isPublicHoliday() || isLastDayOfTheMonth()) {
+                isPublicHoliday() || isLastWorkingDayOfTheMonth()) {
             return Response.status(Response.Status.OK)
                     .entity(new ErrorMessage("No OP on Sundays and public holidays",
                             204, "http://echs.gov.in/img/contact/kochi.html"))
@@ -87,6 +87,15 @@ public class ManageBooking {
                     .tag("Time window not open")
                     .build();
         }
+    }
+
+    private boolean isLastWorkingDayOfTheMonth() throws Exception {
+        LocalDateTime lastDayOfMonth = LocalDateTime.now(ZoneId.of("Asia/Kolkata")).with(TemporalAdjusters.lastDayOfMonth());
+
+        while (lastDayOfMonth.getDayOfWeek().equals(DayOfWeek.SUNDAY) || isPublicHoliday(lastDayOfMonth)) {
+            lastDayOfMonth = lastDayOfMonth.minusDays(1);
+        }
+        return lastDayOfMonth.toLocalDate().equals(LocalDateTime.now(ZoneId.of("Asia/Kolkata")).toLocalDate());
     }
 
 
@@ -122,9 +131,15 @@ public class ManageBooking {
                 .anyMatch(date -> String.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata"))).equals(date));
     }
 
-    private boolean isLastDayOfTheMonth() {
-        return LocalDate.now(ZoneId.of("Asia/Kolkata")).with(TemporalAdjusters.lastDayOfMonth())
-                .equals(LocalDate.now(ZoneId.of("Asia/Kolkata")));
+    private boolean isPublicHoliday(LocalDateTime localDateTime) throws Exception {
+        return holidayService.getHolidaysList().stream()
+                .map(Holiday::getDate)
+                .anyMatch(date -> localDateTime.toLocalDate().toString().equals(date));
     }
+
+//    private boolean isLastDayOfTheMonth() {
+//        return LocalDate.now(ZoneId.of("Asia/Kolkata")).with(TemporalAdjusters.lastDayOfMonth())
+//                .equals(LocalDate.now(ZoneId.of("Asia/Kolkata")));
+//    }
 
 }

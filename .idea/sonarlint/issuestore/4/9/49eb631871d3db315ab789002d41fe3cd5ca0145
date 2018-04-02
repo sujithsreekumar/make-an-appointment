@@ -1,4 +1,5 @@
 
-ssquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8±øîŸ¢,
-[squid:S1118":Add a private constructor to hide the implicit public one.(Ñ°Ù®şÿÿÿÿ8±øîŸ¢,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ş¸…çøÿÿÿÿ8±øîŸ¢,
+ssquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8ŸÖª©¨,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(õŒï 8ŸÖª©¨,
+[squid:S1118":Add a private constructor to hide the implicit public one.(Ñ°Ù®şÿÿÿÿ8ŸÖª©¨,
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ş¸…çøÿÿÿÿ8ŸÖª©¨,
