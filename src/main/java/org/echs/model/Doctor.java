@@ -9,7 +9,7 @@ import static java.util.Arrays.asList;
 
 public enum Doctor {
     MED_SPLST("MED_SPLST", asList("DR.RAICHU", "DR.JOSEPH"), 8),
-    GEN_MED("GEN_MED", asList("DR.UMADEVI"), 5),
+    GEN_MED("GEN_MED", asList("DR.UMADEVI", "DR.VIGY", "DR.SUTANAYA", "DR.KOSHI"), 5),
     DENTAL("DENTAL", asList("DR.MANAVI", "DR.KRISHAN"), 15);
 
     private String department;
