@@ -64,19 +64,20 @@ public class BookingService {
         if (StringUtils.isNotEmpty(doctorName) && !leaveDao.isOnLeave(doctorName, department)) {
             Doctor doc = Doctor.fromDoctorName(doctorName.toUpperCase());
             List<LocalDateTime> fullSlots = getFullSlots(doc.getConsultationDuration());
+            List<LocalDateTime> freeSlots = getFreeSlotsForDoctor(doctorName, fullSlots);
 
-            List<String> doctorNames = doc.getDoctorNames();
-
-            List<LocalDateTime> freeSlots = getFreeSlots(doctorName, fullSlots, doctorNames);
-
-            allotTime(booking, preferredTime, freeSlots);
-            booking.setDepartment(doc.getDepartment());
+            if (!freeSlots.isEmpty()) {
+                allotTime(booking, preferredTime, freeSlots);
+                booking.setDepartment(doc.getDepartment());
+            } else {
+                makeBookingWithAnAvailableDoctor(booking, department, preferredTime, doc.getDoctorNames(), fullSlots);
+            }
 
         } else {
             Doctor doc = Doctor.fromDepartment(department);
-            List<LocalDateTime> fullSlots = getFullSlots(doc.getConsultationDuration());
 
             List<String> doctorNames = doc.getDoctorNames();
+            List<LocalDateTime> fullSlots = getFullSlots(doc.getConsultationDuration());
 
             if (doctorNames.stream()
                     .allMatch(docName -> {
@@ -90,37 +91,48 @@ public class BookingService {
                 throw new BookingException("No doctor available today from this department");
             }
 
-            doctorName = doctorNames.get(new Random().nextInt(doctorNames.size()));
+            makeBookingWithAnAvailableDoctor(booking, department, preferredTime, doctorNames, fullSlots);
 
-            while (leaveDao.isOnLeave(doctorName, department)) {
-                doctorName = doctorNames.get(new Random().nextInt(doctorNames.size()));
-            }
-
-            List<LocalDateTime> freeSlots = getFreeSlots(doctorName, fullSlots, doctorNames);
-            if (freeSlots.isEmpty()) {
-                throw new BookingException("Bookings are full for the day for this department.");
-            }
-
-            allotTime(booking, preferredTime, freeSlots);
         }
         booking.setDepartment(department);
-        booking.setDoctorName(doctorName);
         booking.setDate(LocalDate.now(ZoneId.of("Asia/Kolkata")));
         return bookingDao.createBooking(booking);
     }
 
-    private List<LocalDateTime> getFreeSlots(String doctorName, List<LocalDateTime> fullSlots, List<String> doctorNames) {
+    private void makeBookingWithAnAvailableDoctor(BookingEntity booking, String department, LocalDateTime preferredTime, List<String> doctorNames, List<LocalDateTime> fullSlots) {
+        String doctorName;
+        List<String> doctorsAvailable = doctorNames.stream()
+                .filter((String doctor) -> {
+                    try {
+                        return !leaveDao.isOnLeave(doctor, department);
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        return false;
+                    }
+                })
+                .collect(toList());
+
+        while (!doctorsAvailable.isEmpty()) {
+            doctorName = doctorsAvailable.get(new Random().nextInt(doctorsAvailable.size()));
+            List<LocalDateTime> freeSlots = getFreeSlotsForDoctor(doctorName, fullSlots);
+            if (freeSlots.isEmpty()) {
+                doctorsAvailable.remove(doctorName);
+            } else {
+                allotTime(booking, preferredTime, freeSlots);
+                booking.setDoctorName(doctorName); //set the new doctor name in booking entity
+                break;
+            }
+        }
+        if (doctorsAvailable.isEmpty()) {
+            throw new BookingException("No appointments available for this department.");
+        }
+    }
+
+    private List<LocalDateTime> getFreeSlotsForDoctor(String doctorName, List<LocalDateTime> fullSlots) {
         List<LocalDateTime> allottedSlots = getAllottedSlotsForDoctor(doctorName);
 
-        while (String.valueOf(allottedSlots.size()).equals(String.valueOf(fullSlots.size()))) {
-            doctorName = doctorNames.get(new Random().nextInt(doctorNames.size()));
-            allottedSlots = getAllottedSlotsForDoctor(doctorName);
-        }
-
-        List<LocalDateTime> allottedSlotsForRandomDoctor = allottedSlots;
-
         return fullSlots.stream()
-                .filter(slot -> !allottedSlotsForRandomDoctor.contains(slot))
+                .filter(slot -> !allottedSlots.contains(slot))
                 .collect(toList());
     }
 
@@ -150,7 +162,7 @@ public class BookingService {
                     tempPreferredTimeObj = preferredTime;
                     while (!freeSlots.contains(tempPreferredTimeObj) && !reachedSOD) {
                         tempPreferredTimeObj = tempPreferredTimeObj.minusMinutes(1);
-                        if (tempPreferredTimeObj.isEqual(DAY_START) || tempPreferredTimeObj.isBefore(DAY_START)) {
+                        if (tempPreferredTimeObj.isBefore(DAY_START)) {
                             reachedSOD = true;
                             break;
                         }
