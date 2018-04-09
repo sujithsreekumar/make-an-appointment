@@ -6,7 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71a55895-7485-4034-a71d-1d98a2441387" name="Default" comment="">
+    <list default="true" id="71a55895-7485-4034-a71d-1d98a2441387" name="Default" comment="Removed doctors who have left ECHS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -117,8 +117,8 @@
       <file leaf-file-name="BookingService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="126" column="105" lean-forward="false" selection-start-line="126" selection-start-column="105" selection-end-line="126" selection-end-column="105" />
+            <state relative-caret-position="280">
+              <caret line="133" column="43" lean-forward="true" selection-start-line="133" selection-start-column="43" selection-end-line="133" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -632,11 +632,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523239880059</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed doctors who have left ECHS">
+      <created>1523240052829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1523240052829</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="217357000" />
+    <option name="totallyTimeSpent" value="217443000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="877" extended-state="0" />
@@ -1193,8 +1200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="126" column="105" lean-forward="false" selection-start-line="126" selection-start-column="105" selection-end-line="126" selection-end-column="105" />
+        <state relative-caret-position="280">
+          <caret line="133" column="43" lean-forward="true" selection-start-line="133" selection-start-column="43" selection-end-line="133" selection-end-column="43" />
           <folding />
         </state>
       </provider>
