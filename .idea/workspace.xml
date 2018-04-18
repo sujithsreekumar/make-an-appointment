@@ -7,15 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71a55895-7485-4034-a71d-1d98a2441387" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49eb631871d3db315ab789002d41fe3cd5ca0145" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49eb631871d3db315ab789002d41fe3cd5ca0145" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5ff304088f3b2c5138202dffda67cf273ff10e9e" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/f/5ff304088f3b2c5138202dffda67cf273ff10e9e" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/6101d759ae1a07a59a041342139452e648fe58d6" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/6101d759ae1a07a59a041342139452e648fe58d6" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/687b54cad96fd0c408c0fdf93414b3dbf86506b4" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/687b54cad96fd0c408c0fdf93414b3dbf86506b4" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e1230725ee9085bad409d4497bb2ff50e11424b" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e1230725ee9085bad409d4497bb2ff50e11424b" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da93b3da42334b839e7f8db38e3a4ea4dcf5341b" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da93b3da42334b839e7f8db38e3a4ea4dcf5341b" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc20f0f9ac3603009d53182c2d4010c7abafca16" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc20f0f9ac3603009d53182c2d4010c7abafca16" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" afterPath="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/echs/model/Doctor.class" afterPath="$PROJECT_DIR$/target/classes/org/echs/model/Doctor.class" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking.war" afterPath="$PROJECT_DIR$/target/smsbooking.war" />
@@ -626,7 +618,7 @@
       <workItem from="1523207827089" duration="4446000" />
       <workItem from="1523251092265" duration="2041000" />
       <workItem from="1523277938503" duration="610000" />
-      <workItem from="1524044947442" duration="2000" />
+      <workItem from="1524044947442" duration="15000" />
     </task>
     <task id="LOCAL-00001" summary="Removed doctors who have left ECHS">
       <created>1522686517814</created>
@@ -635,11 +627,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522686517814</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removed doctors who have left ECHS">
+      <created>1524044959324</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1524044959325</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224869000" />
+    <option name="totallyTimeSpent" value="224882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="877" extended-state="0" />
