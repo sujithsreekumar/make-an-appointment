@@ -1,19 +1,19 @@
 
-§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¼ðÖ¸úÿÿÿÿ8É€ÒÆª,
-§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(£õ÷÷øÿÿÿÿ8É€ÒÆª,
-nsquid:S1192"MDefine a constant instead of duplicating this literal "Asia/Kolkata" 4 times.(©Ò²‰ýÿÿÿÿ8É€ÒÆª,
+Xsquid:S2589"7Remove this expression which always evaluates to "true"(ž½ç—úÿÿÿÿ8›­’Çª,
 t
-squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(þÞæÔ8É€ÒÆª,
-Ssquid:S2589"7Remove this expression which always evaluates to "true"(ŸÁ¥Å8É€ÒÆª,
-Ssquid:S2589"7Remove this expression which always evaluates to "true"(þÞæÔ8É€ÒÆª,
-Ssquid:S2589"7Remove this expression which always evaluates to "true"(„Ö¬Š8É€ÒÆª,
-Xsquid:S2589"7Remove this expression which always evaluates to "true"(ž½ç—úÿÿÿÿ8É€ÒÆª,
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(é½ÊÍþÿÿÿÿ8É€ÒÆª,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¼ðÖ¸úÿÿÿÿ8É€ÒÆª,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(£õ÷÷øÿÿÿÿ8É€ÒÆª,
-Msquid:S1612",Replace this lambda with a method reference.(º¹¶Úüÿÿÿÿ8É€ÒÆª,
-vsquid:S00116"TRename this field "DAY_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Ò²‰ýÿÿÿÿ8É€ÒÆª,
-osquid:S00116"RRename this field "DAY_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßŠ˜®8É€ÒÆª,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8É€ÒÆª,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8É€ÒÆª,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8É€ÒÆª,
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(þÞæÔ8›­’Çª,
+Msquid:S1612",Replace this lambda with a method reference.(º¹¶Úüÿÿÿÿ8›­’Çª,
+vsquid:S00116"TRename this field "DAY_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©Ò²‰ýÿÿÿÿ8›­’Çª,
+§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(¼ðÖ¸úÿÿÿÿ8›­’Çª,
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(£õ÷÷øÿÿÿÿ8›­’Çª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8›­’Çª,
+§%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(£õ÷÷øÿÿÿÿ8›­’Çª,
+nsquid:S1192"MDefine a constant instead of duplicating this literal "Asia/Kolkata" 4 times.(©Ò²‰ýÿÿÿÿ8›­’Çª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8›­’Çª,
+osquid:S00116"RRename this field "DAY_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßŠ˜®8›­’Çª,
+Ssquid:S2589"7Remove this expression which always evaluates to "true"(ŸÁ¥Å8›­’Çª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8›­’Çª,
+Ssquid:S2589"7Remove this expression which always evaluates to "true"(þÞæÔ8›­’Çª,
+ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(é½ÊÍþÿÿÿÿ8›­’Çª,
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¼ðÖ¸úÿÿÿÿ8›­’Çª,
+Ssquid:S2589"7Remove this expression which always evaluates to "true"(„Ö¬Š8›­’Çª,

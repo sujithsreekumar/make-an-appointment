@@ -1,18 +1,18 @@
 
-asquid:S2147"ECombine this catch with the one at line 151, which has the same body.(”ı¾8Ñ˜‡©,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ˜‡©,
-msquid:S1192"LDefine a constant instead of duplicating this literal "doctor_name" 4 times.(ÎÅŞ¤øÿÿÿÿ8Ñ˜‡©,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ˜‡©,
-psquid:S1192"ODefine a constant instead of duplicating this literal "preferred_time" 3 times.(¿…Òõùÿÿÿÿ8Ñ˜‡©,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ˜‡©,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ˜‡©,
-osquid:S1192"NDefine a constant instead of duplicating this literal "allotted_time" 4 times.(í³Ö–ıÿÿÿÿ8Ñ˜‡©,
-ksquid:S1192"ODefine a constant instead of duplicating this literal "service_number" 3 times.(¤šú8Ñ˜‡©,
-asquid:S2147"ECombine this catch with the one at line 222, which has the same body.(‹±ÃÆ8Ñ˜‡©,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ˜‡©,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ˜‡©,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ˜‡©,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ñ˜‡©,
-nsquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(€’Í“8Ñ˜‡©,
-nsquid:S1192"MDefine a constant instead of duplicating this literal "patient_name" 4 times.(¢‰Ğ¢ùÿÿÿÿ8Ñ˜‡©,
-lsquid:S1192"KDefine a constant instead of duplicating this literal "department" 3 times.(œğ‡´øÿÿÿÿ8Ñ˜‡©,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÒâÆª,
+lsquid:S1192"KDefine a constant instead of duplicating this literal "department" 3 times.(œğ‡´øÿÿÿÿ8ÒÒâÆª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÒâÆª,
+msquid:S1192"LDefine a constant instead of duplicating this literal "doctor_name" 4 times.(ÎÅŞ¤øÿÿÿÿ8ÒÒâÆª,
+asquid:S2147"ECombine this catch with the one at line 222, which has the same body.(‹±ÃÆ8ÒÒâÆª,
+psquid:S1192"ODefine a constant instead of duplicating this literal "preferred_time" 3 times.(¿…Òõùÿÿÿÿ8ÒÒâÆª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÒâÆª,
+asquid:S2147"ECombine this catch with the one at line 151, which has the same body.(”ı¾8ÒÒâÆª,
+nsquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(€’Í“8ÒÒâÆª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÒâÆª,
+nsquid:S1192"MDefine a constant instead of duplicating this literal "patient_name" 4 times.(¢‰Ğ¢ùÿÿÿÿ8ÒÒâÆª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÒâÆª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÒâÆª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÒâÆª,
+ksquid:S1192"ODefine a constant instead of duplicating this literal "service_number" 3 times.(¤šú8ÒÒâÆª,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÒÒâÆª,
+osquid:S1192"NDefine a constant instead of duplicating this literal "allotted_time" 4 times.(í³Ö–ıÿÿÿÿ8ÒÒâÆª,

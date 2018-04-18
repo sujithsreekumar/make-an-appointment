@@ -12,13 +12,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/6101d759ae1a07a59a041342139452e648fe58d6" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/6101d759ae1a07a59a041342139452e648fe58d6" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/687b54cad96fd0c408c0fdf93414b3dbf86506b4" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/687b54cad96fd0c408c0fdf93414b3dbf86506b4" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e1230725ee9085bad409d4497bb2ff50e11424b" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e1230725ee9085bad409d4497bb2ff50e11424b" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da93b3da42334b839e7f8db38e3a4ea4dcf5341b" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da93b3da42334b839e7f8db38e3a4ea4dcf5341b" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc20f0f9ac3603009d53182c2d4010c7abafca16" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc20f0f9ac3603009d53182c2d4010c7abafca16" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java" afterPath="$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/service/BookingService.class" afterPath="$PROJECT_DIR$/target/classes/org/echs/service/BookingService.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" afterPath="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/model/Doctor.class" afterPath="$PROJECT_DIR$/target/classes/org/echs/model/Doctor.class" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking.war" afterPath="$PROJECT_DIR$/target/smsbooking.war" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/service/BookingService.class" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/service/BookingService.class" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/Doctor.class" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/Doctor.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,7 +35,7 @@
       <file leaf-file-name="ManageBooking.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="675">
               <caret line="75" column="64" lean-forward="false" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -46,7 +47,7 @@
       <file leaf-file-name="Holiday.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Holiday.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="345">
               <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="23" />
               <folding>
                 <element signature="e#540#541#0" expanded="true" />
@@ -99,21 +100,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Doctor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Doctor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="64" lean-forward="false" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
+            <state relative-caret-position="90">
+              <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookingService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookingService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="139" column="36" lean-forward="false" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
+            <state relative-caret-position="1905">
+              <caret line="146" column="43" lean-forward="false" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -218,8 +219,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" />
       </list>
     </option>
   </component>
@@ -280,10 +281,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -395,6 +394,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -623,7 +624,9 @@
       <workItem from="1523030312643" duration="1078000" />
       <workItem from="1523073953421" duration="639000" />
       <workItem from="1523207827089" duration="4446000" />
-      <workItem from="1523251092265" duration="1152000" />
+      <workItem from="1523251092265" duration="2041000" />
+      <workItem from="1523277938503" duration="610000" />
+      <workItem from="1524044947442" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="Removed doctors who have left ECHS">
       <created>1522686517814</created>
@@ -636,7 +639,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223368000" />
+    <option name="totallyTimeSpent" value="224869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="877" extended-state="0" />
@@ -655,15 +658,14 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4488491" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4961637" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46163684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46163684" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2575423" sideWeight="0.49298245" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2612215" sideWeight="0.49298245" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24170965" sideWeight="0.50701755" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -674,6 +676,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981578" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4961637" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1096,7 +1099,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Holiday.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="345">
           <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="23" />
           <folding>
             <element signature="e#540#541#0" expanded="true" />
@@ -1140,17 +1143,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="64" lean-forward="false" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="675">
           <caret line="75" column="64" lean-forward="false" selection-start-line="75" selection-start-column="64" selection-end-line="75" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1170,14 +1165,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1151">
           <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="139" column="36" lean-forward="false" selection-start-line="139" selection-start-column="36" selection-end-line="139" selection-end-column="36" />
+        <state relative-caret-position="1905">
+          <caret line="146" column="43" lean-forward="false" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
           <folding />
         </state>
       </provider>
