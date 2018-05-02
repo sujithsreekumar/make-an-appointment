@@ -21,4 +21,6 @@ public interface BookingDao {
 
     void generateReport() throws Exception;
 
+    byte[] generateReportUsingiText() throws Exception;
+
 }

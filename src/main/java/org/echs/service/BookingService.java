@@ -24,7 +24,7 @@ import static java.util.stream.Collectors.toList;
 public class BookingService {
     private static final Logger logger = LoggerFactory.getLogger(BookingService.class);
     private final LocalDateTime DAY_START = LocalDate.now(ZoneId.of("Asia/Kolkata")).atTime(10, 00, 0);
-    private final LocalDateTime DAY_END = LocalDate.now(ZoneId.of("Asia/Kolkata")).atTime(12, 00, 0);
+    private final LocalDateTime DAY_END = LocalDate.now(ZoneId.of("Asia/Kolkata")).atTime(12, 30, 0);
     BookingDao bookingDao = new BookingDaoImpl();
     LeaveDao leaveDao = new LeaveDaoImpl();
 
@@ -32,8 +32,11 @@ public class BookingService {
         return bookingDao.getAllBookingsByDate(LocalDateTime.now(ZoneId.of("Asia/Kolkata")).toLocalDate());
     }
 
-    public void generateReport() throws Exception {
-        bookingDao.generateReport();
+//    public void generateReport() throws Exception {
+//        bookingDao.generateReport();
+//    }
+    public byte[] generateReport() throws Exception {
+        return bookingDao.generateReportUsingiText();
     }
 
     public BookingEntity getBooking(long id) throws Exception {
@@ -61,20 +64,28 @@ public class BookingService {
         }
         LocalDateTime preferredTime = booking.getPreferredTime();
 
-        if (StringUtils.isNotEmpty(doctorName) && !leaveDao.isOnLeave(doctorName, department)) {
+        if (StringUtils.isNotEmpty(doctorName)) {
             Doctor doc = Doctor.fromDoctorName(doctorName.toUpperCase());
+            if (! doc.getDepartment().equals(department)) {
+                department = doc.getDepartment();
+            }
             List<LocalDateTime> fullSlots = getFullSlots(doc.getConsultationDuration());
-            List<LocalDateTime> freeSlots = getFreeSlotsForDoctor(doctorName, fullSlots);
+            if (!leaveDao.isOnLeave(doctorName, department)) {
+                List<LocalDateTime> freeSlots = getFreeSlotsForDoctor(doctorName, fullSlots);
 
-            if (!freeSlots.isEmpty()) {
-                allotTime(booking, preferredTime, freeSlots);
-                booking.setDepartment(doc.getDepartment());
-            } else {
+                if (!freeSlots.isEmpty()) {
+                    allotTime(booking, preferredTime, freeSlots);
+                    booking.setDepartment(doc.getDepartment());
+                } else {
+                    makeBookingWithAnAvailableDoctor(booking, department, preferredTime, doc.getDoctorNames(), fullSlots);
+                }
+            }
+            else {
                 makeBookingWithAnAvailableDoctor(booking, department, preferredTime, doc.getDoctorNames(), fullSlots);
             }
-
         } else {
             Doctor doc = Doctor.fromDepartment(department);
+            String deptmnt = department;
 
             List<String> doctorNames = doc.getDoctorNames();
             List<LocalDateTime> fullSlots = getFullSlots(doc.getConsultationDuration());
@@ -82,7 +93,7 @@ public class BookingService {
             if (doctorNames.stream()
                     .allMatch(docName -> {
                         try {
-                            return leaveDao.isOnLeave(docName, department);
+                            return leaveDao.isOnLeave(docName, deptmnt);
                         } catch (Exception e) {
                             e.printStackTrace();
                             return true;

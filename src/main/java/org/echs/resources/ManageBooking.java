@@ -63,7 +63,7 @@ public class ManageBooking {
         if (LocalDateTime.now(ZoneId.of("Asia/Kolkata")).getDayOfWeek().equals(DayOfWeek.SUNDAY) ||
                 isPublicHoliday() || isLastWorkingDayOfTheMonth()) {
             return Response.status(Response.Status.OK)
-                    .entity(new ErrorMessage("No OP on Sundays and public holidays",
+                    .entity(new ErrorMessage("No OP on Sundays, public holidays and stock mustering days.",
                             204, "http://echs.gov.in/img/contact/kochi.html"))
                     .tag("No OP today")
                     .build();
@@ -137,9 +137,5 @@ public class ManageBooking {
                 .anyMatch(date -> localDateTime.toLocalDate().toString().equals(date));
     }
 
-//    private boolean isLastDayOfTheMonth() {
-//        return LocalDate.now(ZoneId.of("Asia/Kolkata")).with(TemporalAdjusters.lastDayOfMonth())
-//                .equals(LocalDate.now(ZoneId.of("Asia/Kolkata")));
-//    }
 
 }

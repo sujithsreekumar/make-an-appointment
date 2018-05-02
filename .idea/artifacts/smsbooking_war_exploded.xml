@@ -56,6 +56,7 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.0.5" />
           <element id="library" level="project" name="Maven: net.sf.barcode4j:barcode4j:2.0" />
           <element id="library" level="project" name="Maven: avalon-framework:avalon-framework-impl:4.2.0" />
+          <element id="library" level="project" name="Maven: com.itextpdf:itextpdf:5.5.13" />
         </element>
       </element>
       <element id="directory" name="META-INF">
