@@ -1,28 +1,27 @@
 
-esquid:S2583"DChange this condition so that it does not always evaluate to "false"(¦·úÓøÿÿÿÿ8ÃœÀ–°,
-psquid:S1192"ODefine a constant instead of duplicating this literal "preferred_time" 3 times.(¿…Òõùÿÿÿÿ8ÃœÀ–°,
-asquid:S2147"ECombine this catch with the one at line 236, which has the same body.(‹±ÃÆ8ÃœÀ–°,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÃœÀ–°,
-nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ö’8ÃœÀ–°,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÃœÀ–°,
-€squid:S4165"_Remove this useless assignment; "i" already holds the assigned value along all execution paths.(¨­ÈÍüÿÿÿÿ8ÃœÀ–°,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÃœÀ–°,
-osquid:S1192"NDefine a constant instead of duplicating this literal "allotted_time" 5 times.(í³Ö–ıÿÿÿÿ8ÃœÀ–°,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÃœÀ–°,
-ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëĞ¦ûÿÿÿÿ8ÃœÀ–°,
-ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÙÓÊşÿÿÿÿ8ÃœÀ–°,
-msquid:S1192"LDefine a constant instead of duplicating this literal "doctor_name" 5 times.(ÎÅŞ¤øÿÿÿÿ8ÃœÀ–°,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÃœÀ–°,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÃœÀ–°,
-nsquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(€’Í“8ÃœÀ–°,
-nsquid:S1192"MDefine a constant instead of duplicating this literal "patient_name" 5 times.(¢‰Ğ¢ùÿÿÿÿ8ÃœÀ–°,
-ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÔùÿÿÿÿ8ÃœÀ–°,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÃœÀ–°,
-ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Í§Ôúÿÿÿÿ8ÃœÀ–°,
-asquid:S2147"ECombine this catch with the one at line 165, which has the same body.(”ı¾8ÃœÀ–°,
-ksquid:S1192"ODefine a constant instead of duplicating this literal "service_number" 4 times.(¤šú8ÃœÀ–°,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Œ¶Ñ›8ÃœÀ–°,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÃœÀ–°,
-lsquid:S1192"KDefine a constant instead of duplicating this literal "department" 4 times.(œğ‡´øÿÿÿÿ8ÃœÀ–°,
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‘Ô+8ÃœÀ–°,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÃœÀ–°,
+esquid:S2583"DChange this condition so that it does not always evaluate to "false"(¦·úÓøÿÿÿÿ8£÷Ñˆ²,
+lsquid:S1192"KDefine a constant instead of duplicating this literal "department" 4 times.(œğ‡´øÿÿÿÿ8£÷Ñˆ²,
+asquid:S2147"ECombine this catch with the one at line 234, which has the same body.(‹±ÃÆ8£÷Ñˆ²,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£÷Ñˆ²,
+nsquid:S1192"MDefine a constant instead of duplicating this literal "patient_name" 5 times.(¢‰Ğ¢ùÿÿÿÿ8£÷Ñˆ²,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£÷Ñˆ²,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£÷Ñˆ²,
+osquid:S1192"NDefine a constant instead of duplicating this literal "allotted_time" 5 times.(í³Ö–ıÿÿÿÿ8£÷Ñˆ²,
+ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëĞ¦ûÿÿÿÿ8£÷Ñˆ²,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£÷Ñˆ²,
+ksquid:S1192"ODefine a constant instead of duplicating this literal "service_number" 4 times.(¤šú8£÷Ñˆ²,
+msquid:S1192"LDefine a constant instead of duplicating this literal "doctor_name" 5 times.(ÎÅŞ¤øÿÿÿÿ8£÷Ñˆ²,
+ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Í§Ôúÿÿÿÿ8£÷Ñˆ²,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£÷Ñˆ²,
+psquid:S1192"ODefine a constant instead of duplicating this literal "preferred_time" 3 times.(¿…Òõùÿÿÿÿ8£÷Ñˆ²,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£÷Ñˆ²,
+fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‘Ô+8£÷Ñˆ²,
+nsquid:S2077"RUse a variable binding mechanism to construct this query instead of concatenation.(€’Í“8£÷Ñˆ²,
+€squid:S4165"_Remove this useless assignment; "i" already holds the assigned value along all execution paths.(¨­ÈÍüÿÿÿÿ8£÷Ñˆ²,
+ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÙÓÊşÿÿÿÿ8£÷Ñˆ²,
+asquid:S2147"ECombine this catch with the one at line 163, which has the same body.(”ı¾8£÷Ñˆ²,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£÷Ñˆ²,
+nsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ö’8£÷Ñˆ²,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£÷Ñˆ²,
+ssquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÔùÿÿÿÿ8£÷Ñˆ²,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8£÷Ñˆ²,
