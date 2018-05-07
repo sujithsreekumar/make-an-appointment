@@ -148,7 +148,7 @@ public class BookingDaoImpl implements BookingDao {
             int affectedRows = statement.executeUpdate();
 
             if (affectedRows == 0) {
-                throw new SQLException("Creating booking failed, no rows affected.");
+                throw new SQLException("A booking is already confirmed for the patient at the specified department.");
             } else {
                 logger.info("Created {} row ", affectedRows);
             }

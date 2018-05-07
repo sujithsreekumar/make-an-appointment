@@ -1,6 +1,7 @@
 package org.echs.database;
 
 import org.echs.exception.DataNotFoundException;
+import org.echs.exception.InvalidInputException;
 import org.echs.model.Leave;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,7 +23,7 @@ public class LeaveDaoImpl implements LeaveDao {
 
     @Override
     public Leave updateLeave(Leave leave) {
-        String sql = "INSERT INTO leave VALUES(?,?,?)";
+        String sql = "INSERT INTO leave VALUES(?,?,?) ON CONFLICT (doctor_name, department, date) DO NOTHING";
         try (Connection con = Database.getConnection();
              PreparedStatement statement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, leave.getDoctorName());
@@ -32,14 +33,16 @@ public class LeaveDaoImpl implements LeaveDao {
             int affectedRows = statement.executeUpdate();
 
             if (affectedRows == 0) {
-                throw new SQLException("Creating Leave entry failed, no rows affected.");
+                throw new SQLException("Leave for this doctor has already been marked.");
             } else {
                 logger.info("Created {} row ", affectedRows);
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("Error : ", e.getMessage());
+            throw new InvalidInputException(e.getMessage());
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Error : ", e.getMessage());
+            throw new InvalidInputException(e.getMessage());
         }
         return leave;
     }
@@ -49,7 +52,7 @@ public class LeaveDaoImpl implements LeaveDao {
         boolean isOnleave = false;
         String sql = "SELECT * FROM leave WHERE doctor_name = ? AND department = ? AND date = ?";
         try (Connection con = Database.getConnection();
-        PreparedStatement statement = con.prepareStatement(sql)) {
+             PreparedStatement statement = con.prepareStatement(sql)) {
             statement.setString(1, doctorName);
             statement.setString(2, department);
             statement.setDate(3, Date.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata"))));
@@ -59,7 +62,7 @@ public class LeaveDaoImpl implements LeaveDao {
                 }
             }
         }
-        return  isOnleave;
+        return isOnleave;
     }
 
     @Override

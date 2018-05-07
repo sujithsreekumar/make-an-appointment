@@ -34,14 +34,6 @@ public enum Doctor {
         return consultationDuration;
     }
 
-    public static List<String> doctorsFromDepartment(String department) {
-        return fromDepartment(department).getDoctorNames();
-    }
-
-    public static long getConsulationDuration(String department) {
-        return fromDepartment(department).getConsultationDuration();
-    }
-
     public static Doctor fromDepartment(String department) {
         return Stream.of(Doctor.values())
                 .filter(doctor -> doctor.getDepartment().equals(department))
