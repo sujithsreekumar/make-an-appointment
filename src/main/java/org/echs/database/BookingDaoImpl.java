@@ -42,7 +42,7 @@ public class BookingDaoImpl implements BookingDao {
     private static final Logger logger = LoggerFactory.getLogger(BookingDaoImpl.class);
 
     @Override
-    public BookingEntity getBooking(long id) throws Exception {
+    public BookingEntity getBooking(long id) {
         BookingEntity booking = new BookingEntity();
 
         String sql = "SELECT * FROM booking where id = " + id;
@@ -72,7 +72,7 @@ public class BookingDaoImpl implements BookingDao {
         try (Connection con = Database.getConnection();
              PreparedStatement statement = con.prepareStatement(sql)) {
             statement.setString(1, doctorName);
-            statement.setDate(2, Date.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata"))));
+            statement.setDate(2, Date.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata")).plusDays(1)));
             rs = statement.executeQuery();
             while (rs.next()) {
                 BookingEntity booking = new BookingEntity();
@@ -133,8 +133,9 @@ public class BookingDaoImpl implements BookingDao {
     @Override
     public BookingEntity createBooking(BookingEntity booking) {
         logger.info("Going to insert into booking table...");
-        String sql = "INSERT INTO booking VALUES (DEFAULT,?,?,?,?,?,?,?) " +
-                "ON CONFLICT (service_number, patient_name, department, date) DO NOTHING ";
+        String sql = "INSERT INTO booking VALUES (DEFAULT,?,?,?,?,?,?,?) ";
+//                "ON CONFLICT ON CONSTRAINT BOOKING_PKEY DO NOTHING ";
+//                "ON CONFLICT (service_number, patient_name, department, date) DO NOTHING ";
         try (Connection con = Database.getConnection();
              PreparedStatement statement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, booking.getServiceNumber());

@@ -1,6 +1,7 @@
 package org.echs.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
+import java.time.format.DateTimeFormatter;
 
 @XmlRootElement
 public class Booking {
@@ -22,7 +23,7 @@ public class Booking {
         this.patientName = bookingEntity.getPatientName();
         this.doctorName = bookingEntity.getDoctorName();
         this.department = bookingEntity.getDepartment();
-        this.date = bookingEntity.getDate().toString();
+        this.date = bookingEntity.getDate().format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         this.preferredTime = bookingEntity.getPreferredTime().toLocalTime().toString();
         this.allottedTime = bookingEntity.getAllottedTime().toLocalTime().toString();
     }

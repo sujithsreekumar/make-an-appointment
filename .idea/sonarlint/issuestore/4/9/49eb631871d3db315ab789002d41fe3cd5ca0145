@@ -1,5 +1,9 @@
 
-[squid:S1118":Add a private constructor to hide the implicit public one.(Ñ°Ù®şÿÿÿÿ8Ò¼Äˆ²,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(øƒ Úùÿÿÿÿ8Ò¼Äˆ²,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ş¸…çøÿÿÿÿ8Ò¼Äˆ²,
-ssquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8Ò¼Äˆ²,
+usquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8›ñ‰Ö³,
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(øƒ Úùÿÿÿÿ8äƒ¢¼‹-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡Èúê8†Ö¢¼‹-
+jsquid:S00112
+"FDefine and throw a dedicated exception instead of using a generic one.(ş¸…çøÿÿÿÿ8›ñ‰Ö³,
+]squid:S1118":Add a private constructor to hide the implicit public one.(Ñ°Ù®şÿÿÿÿ8›ñ‰Ö³,
+€squid:S1488"bImmediately return this expression instead of assigning it to the temporary variable "connection".(–Ñú8†Ö¢¼‹-
+>squid:S2068" Remove this hard-coded password.(–Ñú8Äöìû-

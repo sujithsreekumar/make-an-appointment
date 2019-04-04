@@ -55,7 +55,7 @@ public class LeaveDaoImpl implements LeaveDao {
              PreparedStatement statement = con.prepareStatement(sql)) {
             statement.setString(1, doctorName);
             statement.setString(2, department);
-            statement.setDate(3, Date.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata"))));
+            statement.setDate(3, Date.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata")).plusDays(1)));
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
                     isOnleave = true;

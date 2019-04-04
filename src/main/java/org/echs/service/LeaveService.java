@@ -5,8 +5,6 @@ import org.echs.database.LeaveDaoImpl;
 import org.echs.exception.InvalidInputException;
 import org.echs.model.Doctor;
 import org.echs.model.Leave;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.sql.SQLException;
 import java.time.LocalDate;
@@ -17,7 +15,6 @@ import java.util.List;
 
 public class LeaveService {
 
-    private static final Logger logger = LoggerFactory.getLogger(BookingService.class);
     LeaveDao leaveDao = new LeaveDaoImpl();
 
     public List<String> getTodaysLeaves() throws SQLException {

@@ -18,7 +18,7 @@ public class ReportResource {
 
 
     @GET
-    @Produces("application/pdf")
+    @Produces({"application/pdf", "application/xml"})
     public Response getFile() throws Exception {
         logger.info("Generating Today's Booking Report..");
         byte[] file = bookingService.generateReport();

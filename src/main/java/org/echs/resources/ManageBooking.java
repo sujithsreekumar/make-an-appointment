@@ -60,7 +60,7 @@ public class ManageBooking {
     @Path("/make")
     @Consumes({MediaType.APPLICATION_JSON})
     public Response makeBooking(Booking booking, @Context UriInfo uriInfo) throws Exception {
-        if (LocalDateTime.now(ZoneId.of("Asia/Kolkata")).getDayOfWeek().equals(DayOfWeek.SUNDAY) ||
+        if (LocalDateTime.now(ZoneId.of("Asia/Kolkata")).plusDays(1).getDayOfWeek().equals(DayOfWeek.SUNDAY) ||
                 isPublicHoliday() || isLastWorkingDayOfTheMonth()) {
             return Response.status(Response.Status.OK)
                     .entity(new ErrorMessage("No OP on Sundays, public holidays and stock mustering days.",
@@ -68,8 +68,8 @@ public class ManageBooking {
                     .tag("No OP today")
                     .build();
         }
-        if ((LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(5, 0, 0)) &&
-                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(8, 0,0)))
+        if ((LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(16, 0, 0)) &&
+                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(21, 0,0)))
                 || booking.getServiceNumber().equalsIgnoreCase("89102B")) {
             BookingEntity bookingEntity = new BookingEntity(booking);
             logger.info("Calling 'addBooking' service...");
@@ -82,7 +82,7 @@ public class ManageBooking {
                     .build();
         } else {
             return Response.status(Response.Status.OK)
-                    .entity(new ErrorMessage("You can make your booking only between 0600 and 0800 Hrs",
+                    .entity(new ErrorMessage("You can make your booking only between 1555 and 2105 Hrs",
                             204, "http://echs.gov.in/img/contact/kochi.html"))
                     .tag("Time window not open")
                     .build();
@@ -95,14 +95,14 @@ public class ManageBooking {
         while (lastDayOfMonth.getDayOfWeek().equals(DayOfWeek.SUNDAY) || isPublicHoliday(lastDayOfMonth)) {
             lastDayOfMonth = lastDayOfMonth.minusDays(1);
         }
-        return lastDayOfMonth.toLocalDate().equals(LocalDateTime.now(ZoneId.of("Asia/Kolkata")).toLocalDate());
+        return lastDayOfMonth.toLocalDate().equals(LocalDateTime.now(ZoneId.of("Asia/Kolkata")).plusDays(1).toLocalDate());
     }
 
 
     @PUT
     @Path("/{bookingId}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response updateBooking(@PathParam("bookingId") long id, Booking booking) throws Exception {
+    public Response updateBooking(@PathParam("bookingId") long id, Booking booking) {
         booking.setId(id);
         bookingService.update(new BookingEntity(booking));
         return Response.status(Response.Status.OK)
@@ -114,7 +114,7 @@ public class ManageBooking {
     @DELETE
     @Path("/{bookingId}")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response deleteBooking(@PathParam("bookingId") long id) throws Exception {
+    public Response deleteBooking(@PathParam("bookingId") long id) {
         bookingService.remove(id);
         return Response.status(Response.Status.OK).tag("deleted").build();
     }
@@ -128,7 +128,7 @@ public class ManageBooking {
     private boolean isPublicHoliday() throws Exception {
         return holidayService.getHolidaysList().stream()
                 .map(Holiday::getDate)
-                .anyMatch(date -> String.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata"))).equals(date));
+                .anyMatch(date -> String.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata")).plusDays(1)).equals(date));
     }
 
     private boolean isPublicHoliday(LocalDateTime localDateTime) throws Exception {
