@@ -33,7 +33,7 @@ public class BookingEntity {
             this.preferredTime = LocalDateTime.of(LocalDate.now(ZoneId.of("Asia/Kolkata")).plusDays(1),
                     LocalTime.parse(booking.getPreferredTime(), DateTimeFormatter.ISO_LOCAL_TIME));
         } else {
-            this.preferredTime = LocalDate.now(ZoneId.of("Asia/Kolkata")).atTime(9, 30, 0);
+            this.preferredTime = LocalDate.now(ZoneId.of("Asia/Kolkata")).atTime(8, 30, 0);
         }
         this.allottedTime = isEmpty(booking.getAllottedTime()) ? null : LocalDateTime.of(LocalDate.now(ZoneId.of("Asia/Kolkata")).plusDays(1),
                 LocalTime.parse(booking.getAllottedTime(), DateTimeFormatter.ISO_LOCAL_TIME));

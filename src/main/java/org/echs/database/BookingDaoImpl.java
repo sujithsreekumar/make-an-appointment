@@ -131,6 +131,33 @@ public class BookingDaoImpl implements BookingDao {
     }
 
     @Override
+    public boolean hasBooking(String serviceNumber, String patient_name, String department, Date date) {
+        logger.info("Checking if user has already made a booking for the day");
+        String sql = "SELECT COUNT(1) FROM booking WHERE " +
+                "service_number = ? AND patient_name = ? AND department = ? AND date = ?";
+        try (Connection con = Database.getConnection();
+             PreparedStatement statement = con.prepareStatement(sql)) {
+            statement.setString(1, serviceNumber);
+            statement.setString(2, patient_name);
+            statement.setString(3, department);
+            statement.setDate(4, date);
+
+            ResultSet resultSet = statement.executeQuery();
+            if (resultSet.next()) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (SQLException e) {
+            logger.error("Exception : ", e.getMessage());
+            throw new InvalidInputException(e.getMessage());
+        } catch (Exception e) {
+            logger.error("Exception : ", e.getMessage());
+            throw new InvalidInputException(e.getMessage());
+        }
+    }
+
+    @Override
     public BookingEntity createBooking(BookingEntity booking) {
         logger.info("Going to insert into booking table...");
         String sql = "INSERT INTO booking VALUES (DEFAULT,?,?,?,?,?,?,?) ";

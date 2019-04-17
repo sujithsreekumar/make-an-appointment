@@ -7,61 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71a55895-7485-4034-a71d-1d98a2441387" name="Default" comment="updates on class files">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/smsbooking_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/smsbooking_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/smsbooking_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/smsbooking_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__postgresql_postgresql_9_1_901_1_jdbc4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29c5ec5c0bc4414b989fa4f36029969df2db775a" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29c5ec5c0bc4414b989fa4f36029969df2db775a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44c0fe33a1f1937788d0a4212e398b79eadcc7e3" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/44c0fe33a1f1937788d0a4212e398b79eadcc7e3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49eb631871d3db315ab789002d41fe3cd5ca0145" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49eb631871d3db315ab789002d41fe3cd5ca0145" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/6101d759ae1a07a59a041342139452e648fe58d6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/6101d759ae1a07a59a041342139452e648fe58d6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/661ec528b1b2a0741feb9baf72ba356c40f4e9a9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/661ec528b1b2a0741feb9baf72ba356c40f4e9a9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/687b54cad96fd0c408c0fdf93414b3dbf86506b4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/687b54cad96fd0c408c0fdf93414b3dbf86506b4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e1230725ee9085bad409d4497bb2ff50e11424b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e1230725ee9085bad409d4497bb2ff50e11424b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94f8c31fca7d5d4816d10de1b5cf51c55b35bdff" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/4/94f8c31fca7d5d4816d10de1b5cf51c55b35bdff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b30f563fde5cbf7f4a09fcf7fcd17e1d30dc0b3c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b30f563fde5cbf7f4a09fcf7fcd17e1d30dc0b3c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da93b3da42334b839e7f8db38e3a4ea4dcf5341b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da93b3da42334b839e7f8db38e3a4ea4dcf5341b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc550c67285ce5e40cb54f6f3ec504c4a98481fc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc550c67285ce5e40cb54f6f3ec504c4a98481fc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/dfd9513a3145c2c5064490c4c334bbabe08ee184" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/dfd9513a3145c2c5064490c4c334bbabe08ee184" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8ea0be47c6b7c306a85eefb6b5827830a3975a5" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8ea0be47c6b7c306a85eefb6b5827830a3975a5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc20f0f9ac3603009d53182c2d4010c7abafca16" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc20f0f9ac3603009d53182c2d4010c7abafca16" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dcc8c62079936db86f1ecc153ecb5d6c72d9cda8" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dcc8c62079936db86f1ecc153ecb5d6c72d9cda8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smsbooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/smsbooking.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/model/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/model/Booking.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/model/BookingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/model/BookingEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/BookingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/database/BookingDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/BookingDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/database/BookingDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/database/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/LeaveDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/database/LeaveDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/model/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/model/Booking.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/echs/model/BookingEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/model/BookingEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/model/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/model/Doctor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/echs/resources/ManageBooking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/resources/ManageBooking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/resources/ReportResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/resources/ReportResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/echs/service/BookingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/service/BookingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/service/LeaveService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/service/LeaveService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/BookingDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/BookingDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/BookingDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/BookingDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/LeaveDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/LeaveDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/Booking.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/BookingEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/BookingEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/Doctor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/resources/ManageBooking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/resources/ManageBooking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/resources/ReportResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/resources/ReportResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/service/BookingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/service/BookingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/service/LeaveService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/service/LeaveService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/lib/postgresql-9.1-901-1.jdbc4.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -73,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="99" />
+            <state relative-caret-position="140">
+              <caret line="63" column="29" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,42 +56,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="73">
+              <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="1635">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
               <folding>
-                <marker date="1547158929407" expanded="true" signature="1725:1758" ph="SELECT * FRO... booking" />
-                <marker date="1547158929407" expanded="true" signature="2740:2796" ph="SELECT * FRO... booking" />
-                <marker date="1547158929407" expanded="true" signature="4320:4404" ph="SELECT * FRO... booking" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#10198#10199#0" expanded="true" />
+                <element signature="e#10225#10226#0" expanded="true" />
+                <marker date="1554971252197" expanded="true" signature="1725:1758" ph="SELECT * FRO... booking" />
+                <marker date="1554971252197" expanded="true" signature="2740:2796" ph="SELECT * FRO... booking" />
+                <marker date="1554971252197" expanded="true" signature="4320:4404" ph="SELECT * FRO... booking" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/BookingExceptionMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -129,25 +84,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="254" column="39" lean-forward="true" selection-start-line="254" selection-start-column="39" selection-end-line="254" selection-end-column="39" />
+            <state relative-caret-position="1860">
+              <caret line="144" selection-start-line="144" selection-end-line="144" />
               <folding>
-                <element signature="e#11704#11705#0" expanded="true" />
-                <element signature="e#11799#11800#0" expanded="true" />
+                <element signature="e#12174#12175#0" expanded="true" />
+                <element signature="e#12230#12231#0" expanded="true" />
+                <element signature="e#12274#12275#0" expanded="true" />
+                <element signature="e#12325#12326#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="24" />
-              <folding>
-                <element signature="e#941#942#0" expanded="true" />
-                <element signature="e#974#975#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -157,6 +119,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/BookingExceptionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -238,21 +209,21 @@
         <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Leave.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/DataNotFoundExceptionMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/InvalidInputExceptionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDao.java" />
         <option value="$PROJECT_DIR$/.elasticbeanstalk/config.yml" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/BookingEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Booking.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/GenericExceptionMapper.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/BookingExceptionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/BookingEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Booking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java" />
       </list>
     </option>
   </component>
@@ -286,9 +257,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
-    <option name="width" value="1406" />
+    <option name="width" value="1397" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -298,7 +269,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -435,6 +405,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -442,7 +413,8 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547415650402" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555496214770" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="GenericSQL" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="project.structure.last.edited" value="Project" />
@@ -650,7 +622,12 @@
       <workItem from="1547822137122" duration="714000" />
       <workItem from="1549230908204" duration="2057000" />
       <workItem from="1550474480779" duration="650000" />
-      <workItem from="1554394803372" duration="2010000" />
+      <workItem from="1554394803372" duration="2226000" />
+      <workItem from="1554464466031" duration="429000" />
+      <workItem from="1554609894015" duration="121000" />
+      <workItem from="1554700686456" duration="261000" />
+      <workItem from="1554888539451" duration="9486000" />
+      <workItem from="1555048892080" duration="5042000" />
     </task>
     <task id="LOCAL-00001" summary="Removed doctors who have left ECHS">
       <created>1522686517814</created>
@@ -684,13 +661,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308041000" />
+    <option name="totallyTimeSpent" value="323596000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1406" height="877" extended-state="0" />
+    <frame x="0" y="23" width="1397" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49298245" visible="true" weight="0.35557184" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49298245" visible="true" weight="0.22509225" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -700,7 +677,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32992327" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46045917" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4598726" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -713,8 +690,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32992327" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="SonarLint" order="14" />
-      <window_info anchor="bottom" id="Debug" order="15" sideWeight="0.499631" weight="0.35076532" />
-      <window_info anchor="right" id="Maven" />
+      <window_info active="true" anchor="bottom" id="Debug" order="15" sideWeight="0.499631" visible="true" weight="0.5388535" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24981578" />
@@ -727,6 +703,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
       <window_info anchor="right" id="CDI" order="11" />
+      <window_info anchor="right" id="Maven" order="12" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49298245" weight="0.2612215" />
@@ -777,22 +754,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java</url>
-          <line>148</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java</url>
-          <line>150</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/echs/exception/GenericExceptionMapper.java</url>
           <line>12</line>
           <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/echs/exception/BookingExceptionMapper.java</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java</url>
+          <line>72</line>
+          <properties />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -800,144 +777,53 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>resultSet.next()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>resultSet.first()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>resultSet</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>resultSet.getFetchSize()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>statement</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>e.getMessage()</expression-string>
+        <expression-string>statement.executeQuery()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>e</expression-string>
+        <expression-string>statement.executeQuery().getFetchSize()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>holidayService.getHolidaysList()</expression-string>
+        <expression-string>statement.execute()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>isPublicHoliday()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>LocalDateTime.now(ZoneId.of(&quot;Asia/Kolkata&quot;)).plusDays(1).getDayOfWeek().equals(DayOfWeek.SUNDAY)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>allotted_time.toLocalDateTime().toLocalTime().toString()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>LocalDateTime.parse(allotted_time)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>my_pdf_report</expression-string>
+        <expression-string>booking</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.5.13/itextpdf-5.5.13.jar!/com/itextpdf/text/Font.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="73" column="11" selection-start-line="73" selection-start-column="11" selection-end-line="73" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.5.13/itextpdf-5.5.13.jar!/com/itextpdf/text/pdf/PdfPTable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="488" column="16" selection-start-line="488" selection-start-column="16" selection-end-line="488" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Leave.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/InvalidInputExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/InvalidInputException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/DataNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/time/format/FormatStyle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/time/format/DateTimeFormatter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="1773" column="28" selection-start-line="1773" selection-start-column="28" selection-end-line="1773" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/util/IllegalFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/lang/IllegalArgumentException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/sql/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="106" column="28" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/time/LocalDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="1688" column="18" selection-start-line="1688" selection-start-column="18" selection-end-line="1688" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -989,27 +875,6 @@
     <entry file="file://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.pom">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="744" selection-start-line="744" selection-end-line="744" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="616" selection-start-line="616" selection-end-line="616" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.26/jersey-container-servlet-core-2.26.jar!/org/glassfish/jersey/servlet/ServletContainer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.26/jersey-container-servlet-core-2.26.jar!/org/glassfish/jersey/servlet/WebComponent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1028,27 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.26/jersey-common-2.26.jar!/org/glassfish/jersey/internal/Errors.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="130" column="9" selection-start-line="130" selection-start-column="9" selection-end-line="130" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar!/org/glassfish/jersey/server/ServerRuntime.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="142" selection-start-line="142" selection-end-line="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
@@ -1094,28 +938,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/BookingEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding>
-            <element signature="e#2438#2439#0" expanded="true" />
-            <element signature="e#2465#2466#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,46 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Holiday.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="96" column="9" selection-start-line="96" selection-start-column="9" selection-end-line="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="28" />
-          <folding>
-            <marker date="1547158929407" expanded="true" signature="1725:1758" ph="SELECT * FRO... booking" />
-            <marker date="1547158929407" expanded="true" signature="2740:2796" ph="SELECT * FRO... booking" />
-            <marker date="1547158929407" expanded="true" signature="4320:4404" ph="SELECT * FRO... booking" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/BookingExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/GenericExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Booking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="32" />
+        <state relative-caret-position="495">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
@@ -1176,38 +966,250 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Holiday.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="161">
+          <caret line="616" selection-start-line="616" selection-end-line="616" />
+          <folding>
+            <element signature="e#25102#25103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.26/jersey-container-servlet-core-2.26.jar!/org/glassfish/jersey/servlet/ServletContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.26/jersey-common-2.26.jar!/org/glassfish/jersey/internal/Errors.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+          <folding>
+            <element signature="e#8314#8315#0" expanded="true" />
+            <element signature="e#8358#8359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="744" selection-start-line="744" selection-end-line="744" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar!/org/glassfish/jersey/server/ServerRuntime.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="284" selection-start-line="284" selection-end-line="284" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/yasson/1.0/yasson-1.0.jar!/org/eclipse/yasson/internal/model/PropertyModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+          <folding>
+            <element signature="e#9531#9532#0" expanded="true" />
+            <element signature="e#9625#9626#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/yasson/1.0/yasson-1.0.jar!/org/eclipse/yasson/internal/Unmarshaller.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#1080#1081#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/yasson/1.0/yasson-1.0.jar!/org/eclipse/yasson/internal/serializer/AbstractContainerDeserializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/yasson/1.0/yasson-1.0.jar!/org/eclipse/yasson/internal/serializer/ObjectDeserializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#6432#6433#0" expanded="true" />
+            <element signature="e#6480#6481#0" expanded="true" />
+            <element signature="e#6531#6532#0" expanded="true" />
+            <element signature="e#6580#6581#0" expanded="true" />
+            <element signature="e#6616#6617#0" expanded="true" />
+            <element signature="e#6657#6658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/yasson/1.0/yasson-1.0.jar!/org/eclipse/yasson/internal/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#6220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/sql/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="137" column="22" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.jar!/org/postgresql/jdbc/PgResultSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="1352" column="15" selection-start-line="1352" selection-start-column="15" selection-end-line="1352" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/sql/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/time/LocalDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="1345" column="21" selection-start-line="1345" selection-start-column="21" selection-end-line="1345" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/sql/PreparedStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="264" column="9" selection-start-line="264" selection-start-column="9" selection-end-line="264" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/BookingDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="87" lean-forward="true" selection-start-line="16" selection-start-column="87" selection-end-line="16" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2544">
+          <caret line="2970" column="10" selection-start-line="2970" selection-start-column="10" selection-end-line="2970" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/BookingEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+          <folding>
+            <element signature="e#2438#2439#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10198#10199#0" expanded="true" />
+            <element signature="e#10225#10226#0" expanded="true" />
+            <marker date="1554971252197" expanded="true" signature="1725:1758" ph="SELECT * FRO... booking" />
+            <marker date="1554971252197" expanded="true" signature="2740:2796" ph="SELECT * FRO... booking" />
+            <marker date="1554971252197" expanded="true" signature="4320:4404" ph="SELECT * FRO... booking" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="254" column="39" lean-forward="true" selection-start-line="254" selection-start-column="39" selection-end-line="254" selection-end-column="39" />
+        <state relative-caret-position="1860">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
           <folding>
-            <element signature="e#11704#11705#0" expanded="true" />
-            <element signature="e#11799#11800#0" expanded="true" />
+            <element signature="e#12174#12175#0" expanded="true" />
+            <element signature="e#12230#12231#0" expanded="true" />
+            <element signature="e#12274#12275#0" expanded="true" />
+            <element signature="e#12325#12326#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/GenericExceptionMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="120">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/BookingExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="60">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="71" selection-start-line="15" selection-start-column="71" selection-end-line="15" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar!/javax/ws/rs/FormParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="63" column="29" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="29" />
           <folding>
-            <element signature="e#941#942#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

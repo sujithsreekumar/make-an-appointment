@@ -1,7 +1,8 @@
 
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÉÅü¾şÿÿÿÿ8¥œòÂ­,
-csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(˜ìÂÌ8¥œòÂ­,
-csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¤‰×ü8¥œòÂ­,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÅíŸùÿÿÿÿ8¥œòÂ­,
-csquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(÷ª8¥œòÂ­,
-hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Åæ¼ïÿÿÿÿÿ8¥œòÂ­,
+jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÅíŸùÿÿÿÿ8¥œòÂ­,
+esquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(˜ìÂÌ8¥œòÂ­,
+esquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(÷ª8¥œòÂ­,
+usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇëŸÈùÿÿÿÿ8‰ß× -
+esquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(¤‰×ü8¥œòÂ­,
+jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(Åæ¼ïÿÿÿÿÿ8¥œòÂ­,
+jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(ÉÅü¾şÿÿÿÿ8¥œòÂ­,

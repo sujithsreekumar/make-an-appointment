@@ -12,6 +12,7 @@ import org.echs.model.Doctor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.sql.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -104,12 +105,11 @@ public class BookingService {
             makeBookingWithAnAvailableDoctor(booking, department, preferredTime, doctorNames, fullSlots);
 
         }
-        booking.setDepartment(department);
         booking.setDate(LocalDate.now(ZoneId.of("Asia/Kolkata")).plusDays(1));
         return bookingDao.createBooking(booking);
     }
 
-    private void makeBookingWithAnAvailableDoctor(BookingEntity booking, String department, LocalDateTime preferredTime, List<String> doctorNames, List<LocalDateTime> fullSlots) {
+    private void makeBookingWithAnAvailableDoctor(BookingEntity booking, String department, LocalDateTime preferredTime, List<String> doctorNames, List<LocalDateTime> fullSlots) throws Exception {
         String doctorName;
         List<LocalDateTime> freeSlots;
         List<String> doctorsAvailable = doctorNames.stream()
@@ -131,6 +131,7 @@ public class BookingService {
             } else {
                 allotTime(booking, preferredTime, freeSlots);
                 booking.setDoctorName(doctorName); //set the new doctor name in booking entity
+                booking.setDepartment(department);
                 break;
             }
         }
@@ -139,9 +140,14 @@ public class BookingService {
              * This is a special case handling wherein a patient who couldn't get a MED_SPLST appointment is tried to be given an appointment with GEN_MED
              */
             if (Doctor.fromDepartment(department).equals(Doctor.MED_SPLST)) {
-                tryToGetAGenMedBooking(booking, preferredTime);
+                //Check if this patient already has a MED_SPLST booking for the dame date
+                boolean hasBooking = bookingDao.hasBooking(booking.getServiceNumber(), booking.getPatientName(), booking.getDepartment(), Date.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata")).plusDays(1)));
+                if (!hasBooking) {
+                    tryToGetAGenMedBooking(booking, preferredTime);
+                } else {
+                    throw new BookingException("Patient already has an existing booking with MED_SPLST for the selected date.");
+                }
             }
-            throw new BookingException("No appointments available for this department.");
         }
     }
 
@@ -199,7 +205,7 @@ public class BookingService {
                 LocalDateTime day_start;
                 LocalDateTime day_end;
                 if (booking.getDepartment().equals("MED_SPLST")) {
-                    day_start = DAY_START.plusMinutes(15);
+                    day_start = DAY_START.plusMinutes(15);  //this is because MED_SPLST appointments start from 8:30 AM
                     day_end = DAY_END.plusMinutes(15);
                 } else {
                     day_start = DAY_START;

@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -55,6 +56,15 @@ public class ManageBooking {
         List<Booking> bookings = mapToBooking(bookingEntities);
         return Response.status(Response.Status.OK).entity(bookings).tag("found").build();
     }
+
+    @POST
+    @Path("/parse")
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public Response parseSMS(@FormParam("originator") String originator, @FormParam("payload") String payload) {
+        logger.info(payload);
+        return Response.status(Response.Status.OK).build();
+    }
+
 
     @POST
     @Path("/make")
