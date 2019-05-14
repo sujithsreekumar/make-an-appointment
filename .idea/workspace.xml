@@ -7,10 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71a55895-7485-4034-a71d-1d98a2441387" name="Default" comment="updates on class files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/Database.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/exception/InvalidInputExceptionMapper.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/echs/model/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/model/Doctor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/model/ErrorMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/resources/ManageBooking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/resources/ReportResource.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/Database.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/Doctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/model/Doctor.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -71,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -95,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -122,7 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>You can make your bookings only between 6 AM and 9AM</find>
       <find>You can</find>
       <find>Umade</find>
       <find>IST</find>
@@ -152,6 +159,7 @@
       <find>webapi</find>
       <find>304</find>
       <find>DAY_START</find>
+      <find>There see</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,9 +206,9 @@
         <option value="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" />
       </list>
     </option>
   </component>
@@ -638,7 +646,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323665000" />
+    <option name="totallyTimeSpent" value="325414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1642" height="1027" extended-state="6" />
@@ -661,13 +669,13 @@
       <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.500369" side_tool="true" weight="0.44642857" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32992327" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.49489796" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.49411765" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32992327" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="SonarLint" order="14" />
-      <window_info active="true" anchor="bottom" id="Debug" order="15" sideWeight="0.499631" visible="true" weight="0.5388535" />
+      <window_info anchor="bottom" id="Debug" order="15" sideWeight="0.499631" weight="0.5388535" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24981578" />
@@ -747,6 +755,20 @@
           <line>72</line>
           <properties />
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java</url>
+          <line>9</line>
+          <properties class="org.echs.database.Database" method="getConnection">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -933,13 +955,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
@@ -1150,13 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -1181,10 +1189,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="52" />
         </state>
       </provider>
     </entry>
