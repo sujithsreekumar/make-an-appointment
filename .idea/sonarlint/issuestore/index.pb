@@ -51,8 +51,6 @@ a
 1src/main/java/org/echs/database/LeaveDaoImpl.java,6/6/661ec528b1b2a0741feb9baf72ba356c40f4e9a9
 ]
 -src/main/java/org/echs/database/LeaveDao.java,d/f/dfd9513a3145c2c5064490c4c334bbabe08ee184
-L
-.elasticbeanstalk/config.yml,8/b/8b2942d96ac7340d161e27b51e58adf960d5d86f
 W
 'src/main/java/org/echs/model/Leave.java,4/f/4f33687edbe22f57a16472983e8f7ac6d4468a65
 l
