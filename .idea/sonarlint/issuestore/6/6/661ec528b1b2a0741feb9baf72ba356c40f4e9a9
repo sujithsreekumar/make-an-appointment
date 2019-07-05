@@ -1,6 +1,11 @@
 
-Fsquid:S3457"%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8Ğ´Š¤¿,
-Fsquid:S3457"%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8Ğ´Š¤¿,
-`squid:S2147"DCombine this catch with the one at line 40, which has the same body.(”ı¾8›ñ‰Ö³,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›ñ‰Ö³,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›ñ‰Ö³,
+Nsquid:S1481n"0Remove this unused "doctorNames" local variable.(“Ü¸“8–„•¬´-
+bsquid:S21470"DCombine this catch with the one at line 45, which has the same body.(”ı¾8›ñ‰Ö³,
+isquid:CommentedOutCodeLineo"<This block of commented-out lines of code should be removed.(‘«…¥8–„•¬´-
+Fsquid:S1148Z"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›ñ‰Ö³,
+Hsquid:S34571"%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8Ğ´Š¤¿,
+Fsquid:S1148W"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›ñ‰Ö³,
+Osquid:S1481m",Remove this unused "doctors" local variable.(”°Ø¾ùÿÿÿÿ8–„•¬´-
+Wsquid:S1481f"4Remove this unused "doctorNamesList" local variable.(ªìí´øÿÿÿÿ8àÈ“¬´-
+Hsquid:S3457."%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8Ğ´Š¤¿,
+Ksquid:S1481e"(Remove this unused "map" local variable.(ëô¢¡øÿÿÿÿ8àÈ“¬´-

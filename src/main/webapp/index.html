@@ -3,13 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>ECHS Kochi SMS Booking Application - Admin Page</title>
-
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
 </head>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js" type="text/javascript"></script>
 
 <body>
 <h2> What would you like to do?</h2>
@@ -22,26 +18,39 @@
     </ul>
 </div>
 
-<div>
-    <table class="pure-table">
-        <thead>
-        <tr>
-            <th>Passenger name</th>
-            <th>Meal</th>
-            <th>Surcharge</th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody data-bind="foreach: seats">
-        <tr>
-            <td><select data-bind="options: $root.name, value: meal, optionsText: 'mealName'"></select></td>
-            <td><select data-bind="options: $root.availableMeals, value: meal, optionsText: 'mealName'"></select></td>
-            <td data-bind="text: meal().price"></td>
-        </tr>
-        </tbody>
-    </table>
 </div>
-<button class="pure-button pure-button-primary" data-bind="click: addSeat">Reserve another seat</button>
+<table class="pure-table">
+    <thead>
+    <tr>
+        <th width='25%'>Department</th>
+        <th width='25%'>Doctor</th>
+        <th width='25%'>From</th>
+        <th width='25%'>To</th>
+    </tr>
+    </thead>
+    <tbody data-bind="foreach: lines">
+    <tr>
+        <td>
+            <select data-bind='options: doctors, optionsText: "department", optionsCaption: "Select...", value: department'> </select>
+        </td>
+        <td data-bind="with: department">
+            <select data-bind='options: doctorNames, optionsText: "name", optionsCaption: "Select...", value: $parent.doctor'> </select>
+        </td>
+        <td>
+            <a href='#' data-bind='click: $parent.removeLine'>Remove</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+<button class="pure-button pure-button-primary" data-bind="click: addLine">Add another doctor</button>
+<button class="pure-button pure-button-primary" data-bind="click: save">Submit</button>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js" type="text/javascript"></script>
 <script src="js/invokeapi.js"></script>
+<script src="js/doctors.js"></script>
+
 </body>
 </html>

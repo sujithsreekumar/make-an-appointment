@@ -5,30 +5,44 @@
       <artifact name="smsbooking:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java" line="39" mnemonic="9" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="71a55895-7485-4034-a71d-1d98a2441387" name="Default" comment="updates on class files">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/invokeapi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/smsbooking_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/smsbooking_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__bouncycastle_bcprov_jdk14_138.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/echs/model/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/echs/model/DoctorNames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/echs/model/Doctors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/doctors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49eb631871d3db315ab789002d41fe3cd5ca0145" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/49eb631871d3db315ab789002d41fe3cd5ca0145" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/687b54cad96fd0c408c0fdf93414b3dbf86506b4" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/687b54cad96fd0c408c0fdf93414b3dbf86506b4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b2942d96ac7340d161e27b51e58adf960d5d86f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/661ec528b1b2a0741feb9baf72ba356c40f4e9a9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/661ec528b1b2a0741feb9baf72ba356c40f4e9a9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e1230725ee9085bad409d4497bb2ff50e11424b" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e1230725ee9085bad409d4497bb2ff50e11424b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b30f563fde5cbf7f4a09fcf7fcd17e1d30dc0b3c" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/3/b30f563fde5cbf7f4a09fcf7fcd17e1d30dc0b3c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc20f0f9ac3603009d53182c2d4010c7abafca16" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc20f0f9ac3603009d53182c2d4010c7abafca16" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e6d3b70c9f5b02570779b0441540d45eceb0ded" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/dfd9513a3145c2c5064490c4c334bbabe08ee184" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/dfd9513a3145c2c5064490c4c334bbabe08ee184" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/smsbooking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/smsbooking.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/BookingDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/database/BookingDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/HolidayDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/database/HolidayDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/resources/MyResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/resources/MyResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/invokeapi.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/invokeapi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/database/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/LeaveDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/database/LeaveDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/echs/database/LeaveDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/database/LeaveDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/BookingDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/BookingDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/HolidayDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/HolidayDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/resources/MyResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/resources/MyResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/echs/service/LeaveService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/echs/service/LeaveService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/LeaveDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/LeaveDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/LeaveDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/database/LeaveDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/smsbooking/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/resources/MyResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/resources/MyResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/service/LeaveService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/classes/org/echs/service/LeaveService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/smsbooking/js/invokeapi.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/smsbooking/js/invokeapi.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,16 +53,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/MyResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="148" selection-start-line="148" selection-end-line="148" />
+            <state relative-caret-position="360">
+              <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,28 +70,33 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#468#469#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#561#562#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1158#1159#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Department.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3135">
-              <caret line="229" column="48" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="48" />
+            <state relative-caret-position="195">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,53 +104,76 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/invokeapi.js">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/DoctorNames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+            <state relative-caret-position="240">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <folding>
+                <element signature="e#106#107#0" expanded="true" />
+                <element signature="e#133#134#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+                <element signature="e#518#519#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageLeaves.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/doctors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+            <state relative-caret-position="405">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="33" column="16" selection-end-line="46" selection-end-column="7" />
+            <state relative-caret-position="513">
+              <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            <state>
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/GenericExceptionMapper.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="1470">
+              <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -144,16 +185,15 @@
       <list>
         <option value="Python Script" />
         <option value="Enum" />
-        <option value="Class" />
+        <option value="CSS File" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Umade</find>
-      <find>IST</find>
-      <find>http://echs.org</find>
       <find>alloted</find>
       <find>allot</find>
       <find>.now(</find>
@@ -181,6 +221,9 @@
       <find>DAY_START</find>
       <find>There see</find>
       <find>index.jsp</find>
+      <find>su</find>
+      <find>index</find>
+      <find>category</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,12 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/MyResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/ManageBooking.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/MyResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/Model/Booking.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/BookingNotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/DatabaseClass.java" />
         <option value="$PROJECT_DIR$/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/InvalidInputException.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/model/DAY.java" />
@@ -210,16 +247,12 @@
         <option value="$PROJECT_DIR$/src/main/java/org/echs/database/HolidayDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/BookingException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageLeaves.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Leave.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/DataNotFoundExceptionMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/InvalidInputExceptionMapper.java" />
         <option value="$PROJECT_DIR$/.elasticbeanstalk/config.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/GenericExceptionMapper.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/exception/BookingExceptionMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/model/BookingEntity.java" />
@@ -228,13 +261,28 @@
         <option value="$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/invokeapi.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/invokeapi.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/Database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Doctorr.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/sampleProductCategories.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/styles/custom.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/cart.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/test.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/invokeapi.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/doctors.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/resources/MyResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Department.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/Doctors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/model/DoctorNames.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -254,17 +302,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="smsbooking" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="smsbooking" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -280,7 +318,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,6 +358,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="echs" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="make-an-appointment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="make-an-appointment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="echs" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="make-an-appointment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="make-an-appointment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="echs" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -328,7 +383,24 @@
               <item name="make-an-appointment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="echs" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="make-an-appointment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="make-an-appointment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="make-an-appointment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="make-an-appointment" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="make-an-appointment" type="b2602c69:ProjectViewProjectNode" />
@@ -338,14 +410,21 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="make-an-appointment" type="b2602c69:ProjectViewProjectNode" />
+              <item name="make-an-appointment" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
@@ -355,25 +434,26 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect" value="GenericSQL" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="org.echs.database" />
-      <recent name="org.echs.model" />
-      <recent name="org.echs.exception" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.echs.model" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/js" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.echs.model" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.echs.model" />
+      <recent name="org.echs.database" />
+      <recent name="org.echs.exception" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -570,7 +650,9 @@
       <workItem from="1554888539451" duration="9486000" />
       <workItem from="1555048892080" duration="5042000" />
       <workItem from="1559302050549" duration="83000" />
-      <workItem from="1559302309220" duration="5446000" />
+      <workItem from="1559302309220" duration="33166000" />
+      <workItem from="1559731652201" duration="9046000" />
+      <workItem from="1559914769541" duration="5248000" />
     </task>
     <task id="LOCAL-00001" summary="Removed doctors who have left ECHS">
       <created>1522686517814</created>
@@ -604,13 +686,52 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="330943000" />
+    <option name="totallyTimeSpent" value="372957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1663" y="-127" width="1639" height="1177" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49298245" visible="true" weight="0.31934878" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49403748" visible="true" weight="0.32686287" />
+      <window_info id="Structure" order="1" sideWeight="0.50596255" side_tool="true" weight="0.31934878" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Web" order="6" sideWeight="0.50701755" side_tool="true" weight="0.24170965" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32992327" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45898616" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.499631" weight="0.53824884" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500369" side_tool="true" weight="0.44642857" />
+      <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32992327" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.49400923" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3299539" />
+      <window_info anchor="bottom" id="SonarLint" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24984346" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24981578" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.25644806" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="right" id="SciView" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="CDI" order="11" />
+      <window_info anchor="right" id="Maven" order="12" weight="0.32999372" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49298245" visible="true" weight="0.31934878" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -620,69 +741,33 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32992327" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4598726" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.500369" side_tool="true" weight="0.44642857" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32992327" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.49411765" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32992327" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
-      <window_info anchor="bottom" id="SonarLint" order="14" />
-      <window_info anchor="bottom" id="Debug" order="15" sideWeight="0.499631" visible="true" weight="0.53824884" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24981578" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" weight="0.25644806" />
-      <window_info anchor="right" id="SciView" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info anchor="right" id="CDI" order="11" />
-      <window_info anchor="right" id="Maven" order="12" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49298245" weight="0.2612215" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Web" order="6" sideWeight="0.50701755" side_tool="true" weight="0.24170965" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32992327" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46163684" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4488491" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45898616" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.499631" weight="0.53824884" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32992327" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500369" side_tool="true" weight="0.44642857" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32992327" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.4961637" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.49400923" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32992327" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3299539" />
       <window_info anchor="bottom" id="SonarLint" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24984346" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24981578" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" weight="0.25644806" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.25644806" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="right" id="SciView" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
       <window_info anchor="right" id="CDI" order="11" />
+      <window_info anchor="right" id="Maven" order="12" weight="0.32999372" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -714,22 +799,12 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java</url>
-          <line>9</line>
-          <properties class="org.echs.database.Database" method="getConnection">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -781,83 +856,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageHolidays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.elasticbeanstalk/config.yml" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/sql/Statement.java" />
-    <entry file="file://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.pom" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/containers/jersey-container-servlet-core/2.26/jersey-container-servlet-core-2.26.jar!/org/glassfish/jersey/servlet/WebComponent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar!/org/glassfish/jersey/server/ApplicationHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="363" selection-start-line="363" selection-end-line="363" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-common/2.26/jersey-common-2.26.jar!/org/glassfish/jersey/process/internal/RequestScope.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.5/postgresql-42.2.5.jar!/org/postgresql/Driver.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/HolidayService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar!/javax/ws/rs/core/Response.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="184" column="8" selection-start-line="184" selection-start-column="8" selection-end-line="184" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/HolidayDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/exception/DataNotFoundExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar!/org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Holiday.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -897,13 +895,6 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/yasson/1.0/yasson-1.0.jar!/org/eclipse/yasson/internal/serializer/AbstractContainerDeserializer.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/yasson/1.0/yasson-1.0.jar!/org/eclipse/yasson/internal/serializer/ObjectDeserializer.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/yasson/1.0/yasson-1.0.jar!/org/eclipse/yasson/internal/ReflectionUtils.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Booking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/glassfish/jersey/core/jersey-server/2.26/jersey-server-2.26.jar!/org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.class">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -926,35 +917,10 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/BookingEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
-          <folding>
-            <element signature="e#2438#2439#0" expanded="true" />
-            <element signature="e#2465#2466#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.1/javax.ws.rs-api-2.1.jar!/javax/ws/rs/FormParam.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -965,17 +931,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="19">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/ErrorMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/BookingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3135">
-          <caret line="229" column="48" selection-start-line="229" selection-start-column="28" selection-end-line="229" selection-end-column="48" />
+        <state relative-caret-position="239">
+          <caret line="135" column="13" lean-forward="true" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="53" column="73" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -986,62 +969,210 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageLeaves.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/BookingEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="81" column="21" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+          <folding>
+            <element signature="e#2438#2439#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Booking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctorr.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/styles/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/sampleProductCategories.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6568">
+          <caret line="477" column="2" selection-start-line="477" selection-start-column="2" selection-end-line="477" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="29" column="134" selection-start-line="29" selection-start-column="126" selection-end-line="29" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="270">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="36" column="51" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/invokeapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/sql/Statement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/MyResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageLeaves.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ReportResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/resources/ManageBooking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
+        <state relative-caret-position="360">
+          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/invokeapi.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Department.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        <state relative-caret-position="195">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="33" column="16" selection-end-line="46" selection-end-column="7" />
+        <state relative-caret-position="75">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/service/LeaveService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="21" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/BookingDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/DoctorNames.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="e#106#107#0" expanded="true" />
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/doctors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/model/Doctors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1158#1159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/echs/database/LeaveDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1053,9 +1184,9 @@
           <artifact-editor>
             <show-content>
               <type id="jpa-descriptors" />
-              <type id="artifact" />
               <type id="javaee-facet-resources" />
               <type id="library" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
           <last-edited>smsbooking:war</last-edited>

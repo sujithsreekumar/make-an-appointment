@@ -1,10 +1,10 @@
 
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(øƒ Úùÿÿÿÿ8³Ğ’Ü -
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‡Èúê8³Ğ’Ü -
-€squid:S1488"bImmediately return this expression instead of assigning it to the temporary variable "connection".(–Ñú8Şã’Ü -
 ]squid:S1118":Add a private constructor to hide the implicit public one.(Ñ°Ù®şÿÿÿÿ8›ñ‰Ö³,
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Â¾°ôùÿÿÿÿ8ÌÀº²-
+Lsquid:S2115")Add password protection to this database.(ûèşÅüÿÿÿÿ8ÌÀº²-
+gsquid:CallToDeprecatedMethod"3Remove this use of "newInstance"; it is deprecated.(´¦ùüÿÿÿÿ8´¸”í°-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(İ‚Ù¸8ÌÀº²-
+usquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8›ñ‰Ö³,
+…squid:S1488"bImmediately return this expression instead of assigning it to the temporary variable "connection".(ûèşÅüÿÿÿÿ8ÌÀº²-
 jsquid:S00112
 "FDefine and throw a dedicated exception instead of using a generic one.(ş¸…çøÿÿÿÿ8›ñ‰Ö³,
->squid:S2068" Remove this hard-coded password.(–Ñú8Şã’Ü -
-usquid:S2737"WAdd logic to this catch clause or eliminate it and rethrow the exception automatically.(ö™û8›ñ‰Ö³,
-gsquid:CallToDeprecatedMethod"3Remove this use of "newInstance"; it is deprecated.(´¦ùüÿÿÿÿ8´¸”í°-

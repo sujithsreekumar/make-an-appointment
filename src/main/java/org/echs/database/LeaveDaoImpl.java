@@ -2,6 +2,9 @@ package org.echs.database;
 
 import org.echs.exception.DataNotFoundException;
 import org.echs.exception.InvalidInputException;
+import org.echs.model.Department;
+import org.echs.model.DoctorNames;
+import org.echs.model.Doctors;
 import org.echs.model.Leave;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +18,9 @@ import java.sql.Statement;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class LeaveDaoImpl implements LeaveDao {
 
@@ -89,5 +94,25 @@ public class LeaveDaoImpl implements LeaveDao {
             }
         }
         return doctorNames;
+    }
+
+    @Override
+    public List<Doctors> getDepartmentsAndDoctors() throws Exception {
+        Map<Doctors, List<DoctorNames>> map = new HashMap<>();
+        List<DoctorNames> doctorNamesList = new ArrayList<>();
+        Map<Set<Department>, List<DoctorNames>> tempMap = new HashMap<>()
+        String sql = "SELECT * FROM doctors GROUP BY department";
+        try(Connection connection = Database.getConnection();
+            Statement statement = connection.createStatement();
+            ResultSet rs = statement.executeQuery(sql)) {
+            while (rs.next()) {
+                Doctors doctors = new Doctors();
+                DoctorNames doctorNames = new DoctorNames();
+//                doctors.setDepartment(Department.fromDepartmentName(rs.getString("department")));
+//                doctorNames.setName(rs.getString("doctor_name"));
+//                doctorNamesList.add(doctorNames);
+//                map.put(doctors, doctorNamesList);
+            }
+        }
     }
 }

@@ -1,15 +1,20 @@
 package org.echs.resources;
 
+import org.echs.model.Doctors;
+import org.echs.service.LeaveService;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 /**
  * Root resource (exposed at "myresource" path)
  */
-@Path("myresource")
+@Path("resources")
 public class MyResource {
+    LeaveService leaveService = new LeaveService();
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
@@ -21,6 +26,13 @@ public class MyResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
         return "Got it!";
+    }
+
+    @GET
+    @Path("/doctors")
+    public Response getDepartmentsAndDoctors() {
+        final Doctors doctors = leaveService.getDepartmentsAndDoctors();
+        return Response.status(Response.Status.OK).entity(doctors).build();
     }
 
 }

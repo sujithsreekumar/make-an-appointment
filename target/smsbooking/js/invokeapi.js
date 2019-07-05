@@ -1,29 +1,30 @@
-function SeatReservation(name, initialMeal) {
+var LeaveLine = function () {
     var self = this;
-    self.name = name;
-    self.meal = ko.observable(initialMeal);
-}
+    self.department = ko.observable();
+    self.doctor = ko.observable();
+    self.department.subscribe(function() {
+        self.doctor(undefined);
+    });
+};
 
-// Overall viewmodel for this screen, along with initial state
-function ReservationsViewModel() {
+var LeaveModel = function () {
     var self = this;
+    self.lines = ko.observableArray([new LeaveLine()]);
 
-    // Non-editable catalog data - would come from the server
-    self.availableMeals = [
-        { mealName: "Standard (sandwich)", price: 0 },
-        { mealName: "Premium (lobster)", price: 34.95 },
-        { mealName: "Ultimate (whole zebra)", price: 290 }
-    ];
+    //operations
+    self.addLine = function() { self.lines.push(new LeaveLine())};
+    self.removeLine = function(line) { self.lines.remove(line) };
+    self.save = function() {
+        var dataToSave = $.map(self.lines(), function(line) {
+            return line.doctor() ? {
+                doctorName: line.doctor().name,
+                departmentName: line.department.department
+            } : undefined
+        });
+        alert("Could now send this to server: " + JSON.stringify(dataToSave));
+    };
+};
 
-    // Editable data
-    self.seats = ko.observableArray([
-        new SeatReservation("Steve", self.availableMeals[0]),
-        new SeatReservation("Bert", self.availableMeals[0])
-    ]);
-
-    self.addSeat = function() {
-        self.seats.push(new SeatReservation("", self.availableMeals[0]));
-    }
-}
-
-ko.applyBindings(new ReservationsViewModel());
+$(function() {
+    ko.applyBindings(new LeaveModel());
+});

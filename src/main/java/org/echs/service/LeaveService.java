@@ -4,6 +4,7 @@ import org.echs.database.LeaveDao;
 import org.echs.database.LeaveDaoImpl;
 import org.echs.exception.InvalidInputException;
 import org.echs.model.Doctor;
+import org.echs.model.Doctors;
 import org.echs.model.Leave;
 
 import java.sql.SQLException;
@@ -31,5 +32,9 @@ public class LeaveService {
             throw new InvalidInputException("Date is not a valid format. Here is a sample format : 2018-01-01");
         }
         leaveDao.updateLeave(leave);
+    }
+
+    public Doctors getDepartmentsAndDoctors() {
+        return leaveDao.getDepartmentsAndDoctors();
     }
 }

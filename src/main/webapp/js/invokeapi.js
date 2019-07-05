@@ -1,26 +1,32 @@
-function MarkLeave(data) {
+var LeaveLine = function () {
     var self = this;
-    self.department = ko.observable(data.department);
-    self.doctorName = ko.observable(data.doctorName);
-    self.dates = ko.observableArray(data.dates);
-}
+    self.department = ko.observable();
+    self.doctor = ko.observable();
+    self.department.subscribe(function() {
+        self.doctor(undefined);
+    });
+};
 
-function LeaveViewModel() {
+var LeaveModel = function () {
     var self = this;
+    self.lines = ko.observableArray([new LeaveLine()]);
 
-    $.getJSON("/department", function(allData) {
-        var mappedDepartments = $.map(allData, function(item) { return new department(item) });
-        self.department(mappedDepartments);
-    });
+    //operations
+    self.addLine = function() { self.lines.push(new LeaveLine())};
+    self.removeLine = function(line) { self.lines.remove(line) };
+    self.save = function() {
+        var dataToSave = $.map(self.lines(), function(line) {
+            return line.doctor() ? {
+                doctorName: line.doctor().name,
+                departmentName: line.department.department
+            } : undefined
+        });
+        alert("Could now send this to server: " + JSON.stringify(dataToSave));
+    };
 
-    $.getJSON("/department/doctors", function(allData) {
-        var mappedDepartments = $.map(allData, function(item) { return new department(item) });
-        self.department(mappedDepartments);
-    });
+    var doctors = $getJSON()
+};
 
-    self.addSeat = function() {
-        self.seats.push(new MarkLeave(self.department(), self.doctorName(), self.date()));
-    }
-}
-
-ko.applyBindings(new LeaveViewModel());
+$(function() {
+    ko.applyBindings(new LeaveModel());
+});
