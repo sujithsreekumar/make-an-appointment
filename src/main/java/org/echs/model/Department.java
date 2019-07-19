@@ -2,7 +2,6 @@ package org.echs.model;
 
 import org.echs.exception.DataNotFoundException;
 
-import java.util.List;
 import java.util.stream.Stream;
 
 public enum Department {

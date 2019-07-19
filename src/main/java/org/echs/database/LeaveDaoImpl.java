@@ -1,5 +1,10 @@
 package org.echs.database;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 import org.echs.exception.DataNotFoundException;
 import org.echs.exception.InvalidInputException;
 import org.echs.model.Department;
@@ -21,6 +26,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.springframework.jdbc.core.RowMapper;
 
 public class LeaveDaoImpl implements LeaveDao {
 
@@ -98,21 +104,30 @@ public class LeaveDaoImpl implements LeaveDao {
 
     @Override
     public List<Doctors> getDepartmentsAndDoctors() throws Exception {
-        Map<Doctors, List<DoctorNames>> map = new HashMap<>();
-        List<DoctorNames> doctorNamesList = new ArrayList<>();
-        Map<Set<Department>, List<DoctorNames>> tempMap = new HashMap<>()
-        String sql = "SELECT * FROM doctors GROUP BY department";
-        try(Connection connection = Database.getConnection();
-            Statement statement = connection.createStatement();
-            ResultSet rs = statement.executeQuery(sql)) {
+        final HashMap<String, Set<String>> doctorsMap = new HashMap<>();
+        String sql = "SELECT * FROM doctors GROUP BY doctor_name, department";
+        try (Connection connection = Database.getConnection();
+             Statement statement = connection.createStatement();
+             ResultSet rs = statement.executeQuery(sql)) {
             while (rs.next()) {
-                Doctors doctors = new Doctors();
-                DoctorNames doctorNames = new DoctorNames();
-//                doctors.setDepartment(Department.fromDepartmentName(rs.getString("department")));
-//                doctorNames.setName(rs.getString("doctor_name"));
-//                doctorNamesList.add(doctorNames);
-//                map.put(doctors, doctorNamesList);
+                doctorsMap.put(rs.getString("department"), rs.getString("doctor_name"));
             }
         }
     }
+}
+class DoctorsRowMapper implements RowMapper<Doctors> {
+
+    @Override
+    public Doctors mapRow(ResultSet rs, int rowNum) throws SQLException {
+
+        final Doctors doctors = new Doctors();
+        final DoctorNames doctorNames = new DoctorNames();
+
+        doctors.setDepartment(Department.fromDepartmentName(rs.getString("department")));
+        doctorNames.setName(rs.getString("doctor_name"));
+        doctors.setDoctorNames(doctorNames);
+
+        return state;
+    }
+
 }

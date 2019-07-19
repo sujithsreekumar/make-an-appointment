@@ -1,5 +1,6 @@
 package org.echs.resources;
 
+import java.util.List;
 import org.echs.model.Doctors;
 import org.echs.service.LeaveService;
 
@@ -30,8 +31,8 @@ public class MyResource {
 
     @GET
     @Path("/doctors")
-    public Response getDepartmentsAndDoctors() {
-        final Doctors doctors = leaveService.getDepartmentsAndDoctors();
+    public Response getDepartmentsAndDoctors() throws Exception {
+        final List<Doctors> doctors = leaveService.getDepartmentsAndDoctors();
         return Response.status(Response.Status.OK).entity(doctors).build();
     }
 

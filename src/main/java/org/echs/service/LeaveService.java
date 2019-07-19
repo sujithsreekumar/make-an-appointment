@@ -34,7 +34,7 @@ public class LeaveService {
         leaveDao.updateLeave(leave);
     }
 
-    public Doctors getDepartmentsAndDoctors() {
+    public List<Doctors> getDepartmentsAndDoctors() throws Exception {
         return leaveDao.getDepartmentsAndDoctors();
     }
 }
