@@ -22,7 +22,7 @@ public interface BookingDao {
 
     BookingEntity deleteBooking(long id);
 
-    void generateReport() throws Exception;
+//    void generateReport() throws Exception;
 
     byte[] generateReportUsingiText() throws Exception;
 

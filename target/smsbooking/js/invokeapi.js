@@ -23,6 +23,8 @@ var LeaveModel = function () {
         });
         alert("Could now send this to server: " + JSON.stringify(dataToSave));
     };
+
+    var doctors = $getJSON()
 };
 
 $(function() {

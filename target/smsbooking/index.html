@@ -34,7 +34,7 @@
             <select data-bind='options: doctors, optionsText: "department", optionsCaption: "Select...", value: department'> </select>
         </td>
         <td data-bind="with: department">
-            <select data-bind='options: names, optionsText: "name", optionsCaption: "Select...", value: $parent.doctor'> </select>
+            <select data-bind='options: doctorNames, optionsText: "name", optionsCaption: "Select...", value: $parent.doctor'> </select>
         </td>
         <td>
             <a href='#' data-bind='click: $parent.removeLine'>Remove</a>

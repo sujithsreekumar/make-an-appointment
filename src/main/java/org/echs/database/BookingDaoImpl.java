@@ -9,22 +9,7 @@ import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.pdf.draw.DottedLineSeparator;
-import net.sf.dynamicreports.jasper.builder.JasperReportBuilder;
-import net.sf.dynamicreports.report.builder.DynamicReports;
-import net.sf.dynamicreports.report.builder.column.Columns;
-import net.sf.dynamicreports.report.builder.component.Components;
-import net.sf.dynamicreports.report.builder.datatype.DataTypes;
-import net.sf.dynamicreports.report.constant.HorizontalAlignment;
-import net.sf.dynamicreports.report.exception.DRException;
-import org.echs.exception.DataNotFoundException;
-import org.echs.exception.InvalidInputException;
-import org.echs.model.BookingEntity;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.ByteArrayOutputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.Date;
@@ -37,6 +22,11 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
+import org.echs.exception.DataNotFoundException;
+import org.echs.exception.InvalidInputException;
+import org.echs.model.BookingEntity;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class BookingDaoImpl implements BookingDao {
     private static final Logger logger = LoggerFactory.getLogger(BookingDaoImpl.class);
@@ -233,38 +223,38 @@ public class BookingDaoImpl implements BookingDao {
         return null;
     }
 
-    @Override
-    public void generateReport() throws Exception {
-        Connection connection = Database.getConnection();
-
-        String sql = "SELECT doctor_name, department, service_number, patient_name, date, allotted_time  " +
-                "FROM booking ORDER BY doctor_name";
-
-        JasperReportBuilder report = DynamicReports.report();
-        report
-                .columns(
-                        Columns.column("Doctor Name", "doctor_name", DataTypes.stringType()),
-                        Columns.column("Department", "department", DataTypes.stringType()),
-                        Columns.column("Service Number", "service_number", DataTypes.stringType()),
-                        Columns.column("Patient Name", "patient_name", DataTypes.stringType()),
-                        Columns.column("Date", "date", DataTypes.dateType()),
-                        Columns.column("Allotted Time", "allotted_time", DataTypes.stringType()))
-                .title(
-                        Components.text(" TODAY'S SMS APPOINTMENTS ")
-                                .setHorizontalAlignment(HorizontalAlignment.CENTER))
-                .pageFooter(Components.pageXofY())
-                .setDataSource(sql, connection);
-
-        try {
-            logger.info("Creating PDF file now...");
-            report.toPdf(new FileOutputStream("sms_bookings.pdf"));
-            logger.info("Done creating PDF file");
-        } catch (DRException e) {
-            e.printStackTrace();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
+//    @Override
+//    public void generateReport() throws Exception {
+//        Connection connection = Database.getConnection();
+//
+//        String sql = "SELECT doctor_name, department, service_number, patient_name, date, allotted_time  " +
+//                "FROM booking ORDER BY doctor_name";
+//
+//        JasperReportBuilder report = DynamicReports.report();
+//        report
+//                .columns(
+//                        Columns.column("Doctor Name", "doctor_name", DataTypes.stringType()),
+//                        Columns.column("Department", "department", DataTypes.stringType()),
+//                        Columns.column("Service Number", "service_number", DataTypes.stringType()),
+//                        Columns.column("Patient Name", "patient_name", DataTypes.stringType()),
+//                        Columns.column("Date", "date", DataTypes.dateType()),
+//                        Columns.column("Allotted Time", "allotted_time", DataTypes.stringType()))
+//                .title(
+//                        Components.text(" TODAY'S SMS APPOINTMENTS ")
+//                                .setHorizontalAlignment(HorizontalAlignment.CENTER))
+//                .pageFooter(Components.pageXofY())
+//                .setDataSource(sql, connection);
+//
+//        try {
+//            logger.info("Creating PDF file now...");
+//            report.toPdf(new FileOutputStream("sms_bookings.pdf"));
+//            logger.info("Done creating PDF file");
+//        } catch (DRException e) {
+//            e.printStackTrace();
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     public byte[] generateReportUsingiText() throws Exception {
         String sql = "SELECT doctor_name, department, service_number, patient_name, date, allotted_time  " +
@@ -322,9 +312,6 @@ public class BookingDaoImpl implements BookingDao {
                 String patient_name = rs.getString("patient_name");
                 table_cell = new PdfPCell(new Phrase(patient_name));
                 pdfPTable.addCell(table_cell);
-//                String date = rs.getString("date");
-//                table_cell = new PdfPCell(new Phrase(date));
-//                pdfPTable.addCell(table_cell);
                 Timestamp allotted_time = rs.getTimestamp("allotted_time");
                 table_cell = new PdfPCell(new Phrase(allotted_time.toLocalDateTime().toLocalTime().toString()));
                 pdfPTable.addCell(table_cell);

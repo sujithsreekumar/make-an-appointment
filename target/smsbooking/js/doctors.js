@@ -1,6 +1,6 @@
 var doctors = [
     {
-        "names": [
+        "doctorNames": [
             {
                 "name": "DR.UMADEVI"
             },
@@ -14,7 +14,7 @@ var doctors = [
         "department": "GEN_MED"
     },
     {
-        "names": [
+        "doctorNames": [
             {
                 "name": "DR.RAICHU"
             },
@@ -25,7 +25,7 @@ var doctors = [
         "department": "MED_SPLST"
     },
     {
-        "names": [
+        "doctorNames": [
             {
                 "name": "DR.MANAVI"
             },

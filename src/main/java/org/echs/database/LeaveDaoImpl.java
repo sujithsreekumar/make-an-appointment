@@ -1,19 +1,5 @@
 package org.echs.database;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Set;
-import org.echs.exception.DataNotFoundException;
-import org.echs.exception.InvalidInputException;
-import org.echs.model.Department;
-import org.echs.model.DoctorNames;
-import org.echs.model.Doctors;
-import org.echs.model.Leave;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
@@ -25,8 +11,14 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import org.springframework.jdbc.core.RowMapper;
+import org.echs.exception.DataNotFoundException;
+import org.echs.exception.InvalidInputException;
+import org.echs.model.Department;
+import org.echs.model.DoctorNames;
+import org.echs.model.Doctors;
+import org.echs.model.Leave;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class LeaveDaoImpl implements LeaveDao {
 
@@ -104,30 +96,30 @@ public class LeaveDaoImpl implements LeaveDao {
 
     @Override
     public List<Doctors> getDepartmentsAndDoctors() throws Exception {
-        final HashMap<String, Set<String>> doctorsMap = new HashMap<>();
-        String sql = "SELECT * FROM doctors GROUP BY doctor_name, department";
+        final HashMap<Department, List<DoctorNames>> docMap = new HashMap<>();
+        String sql = "SELECT * FROM doctors GROUP BY department, doctor_name";
         try (Connection connection = Database.getConnection();
              Statement statement = connection.createStatement();
              ResultSet rs = statement.executeQuery(sql)) {
             while (rs.next()) {
-                doctorsMap.put(rs.getString("department"), rs.getString("doctor_name"));
+                DoctorNames doctorNames = new DoctorNames();
+                if (docMap.isEmpty() || !docMap.containsKey(Department.fromDepartmentName(rs.getString("department")))) {
+                    List<DoctorNames> docsInDep = new ArrayList<>();
+                    final String doctor_name = rs.getString("doctor_name");
+                    doctorNames.setName(doctor_name);
+                    docsInDep.add(doctorNames);
+                    docMap.put(Department.fromDepartmentName(rs.getString("department")), docsInDep);
+                } else {
+                    final String doctor_name = rs.getString("doctor_name");
+                    final Department department = Department.fromDepartmentName(rs.getString("department"));
+                    final List<DoctorNames> avlDocs = docMap.get(department);
+                    doctorNames.setName(doctor_name);
+                    avlDocs.add(doctorNames);
+                }
             }
         }
+        List<Doctors> doctorsList = new ArrayList<>();
+        docMap.entrySet().iterator().forEachRemaining(departmentListEntry -> doctorsList.add(new Doctors(departmentListEntry.getKey(), departmentListEntry.getValue())));
+        return doctorsList;
     }
-}
-class DoctorsRowMapper implements RowMapper<Doctors> {
-
-    @Override
-    public Doctors mapRow(ResultSet rs, int rowNum) throws SQLException {
-
-        final Doctors doctors = new Doctors();
-        final DoctorNames doctorNames = new DoctorNames();
-
-        doctors.setDepartment(Department.fromDepartmentName(rs.getString("department")));
-        doctorNames.setName(rs.getString("doctor_name"));
-        doctors.setDoctorNames(doctorNames);
-
-        return state;
-    }
-
 }
