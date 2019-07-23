@@ -37,6 +37,9 @@
             <select data-bind='options: doctorNames, optionsText: "name", optionsCaption: "Select...", value: $parent.doctor'> </select>
         </td>
         <td>
+            <div data-bind="datepicker: { value: value2 }"></div>
+        </td>
+        <td>
             <a href='#' data-bind='click: $parent.removeLine'>Remove</a>
         </td>
     </tr>
@@ -50,7 +53,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js" type="text/javascript"></script>
 <script src="js/invokeapi.js"></script>
-<script src="js/doctors.js"></script>
+<!--<script src="js/doctors.js"></script>-->
 
 </body>
 </html>
