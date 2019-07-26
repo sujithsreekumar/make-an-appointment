@@ -24,8 +24,8 @@
     <tr>
         <th width='25%'>Department</th>
         <th width='25%'>Doctor</th>
-        <th width='25%'>From</th>
-        <th width='25%'>To</th>
+        <th width='25%'>From (format: dd/MM/yy)</th>
+        <th width='25%'>To (format: dd/MM/yy)</th>
     </tr>
     </thead>
     <tbody data-bind="foreach: lines">
@@ -35,6 +35,12 @@
         </td>
         <td data-bind="with: department">
             <select data-bind='options: doctorNames, optionsText: "name", optionsCaption: "Select...", value: $parent.doctor'> </select>
+        </td>
+        <td>
+            <input data-bind='visible: department, value: fromdate, valueUpdate: "afterkeydown"' />
+        </td>
+        <td>
+            <input data-bind='visible: fromdate, value: todate, valueUpdate: "afterkeydown"' />
         </td>
         <td>
             <a href='#' data-bind='click: $parent.removeLine'>Remove</a>
