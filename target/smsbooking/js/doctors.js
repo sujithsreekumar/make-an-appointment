@@ -2,13 +2,16 @@ var doctors = [
     {
         "doctorNames": [
             {
-                "name": "DR.UMADEVI"
+                "name": "DR.BEENA"
+            },
+            {
+                "name": "DR.DEEPADEVI"
             },
             {
                 "name": "DR.KOSHI"
             },
             {
-                "name": "DR.BEENA"
+                "name": "DR.UMADEVI"
             }
         ],
         "department": "GEN_MED"
@@ -16,10 +19,10 @@ var doctors = [
     {
         "doctorNames": [
             {
-                "name": "DR.RAICHU"
+                "name": "DR.JOSEPH"
             },
             {
-                "name": "DR.JOSEPH"
+                "name": "DR.RAICHU"
             }
         ],
         "department": "MED_SPLST"
@@ -27,10 +30,10 @@ var doctors = [
     {
         "doctorNames": [
             {
-                "name": "DR.MANAVI"
+                "name": "DR.KRISHAN"
             },
             {
-                "name": "DR.KRISHAN"
+                "name": "DR.MANAVI"
             }
         ],
         "department": "DENTAL"
