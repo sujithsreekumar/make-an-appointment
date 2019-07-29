@@ -7,43 +7,41 @@ var LeaveLine = function () {
 };
 
 var LeaveModel = function () {
-    var self = this;
-    self.lines = ko.observableArray([new LeaveLine()]);
+        var self = this;
+        self.lines = ko.observableArray([new LeaveLine()]);
 
-    //operations
-    self.addLine = function() { self.lines.push(new LeaveLine())};
-    self.removeLine = function(line) { self.lines.remove(line) };
-    self.save = function() {
-        var dataToSave = $.map(self.lines(), function(line) {
-            return line.doctor() ? {
-                doctorName: line.doctor().name,
-                department: line.department().department,
-                // fromDate: line.fromdate(),
-                date: line.fromdate()
-            } : undefined
-        });
-        alert("Could now send this to server: " + JSON.stringify(dataToSave));
-        // $.post("http://localhost:8080/smsbooking/webapi/leaves/make", dataToSave, function(returnedData) {
-        //     alert("Response: " + JSON.stringify(returnedData));
-        // }, "json")
-        // $.getJSON("http://localhost:8080/smsbooking/webapi/resources/doctors", function (data) {
-        //     alert("Doctors: " + JSON.stringify(data));
-        // });
-        $.ajax({
-            url: 'leaves/make/',
-            type: 'post',
-            data: dataToSave,
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            success: function (returnedData) {
-                alert("Response: " + JSON.stringify(returnedData));
-            }
-        });
+        //operations
+        self.addLine = function () {
+            self.lines.push(new LeaveLine())
+        };
+        self.removeLine = function (line) {
+            self.lines.remove(line)
+        };
+        self.save = function () {
+            var dataToSave = $.map(self.lines(), function (line) {
+                return line.doctor() ? {
+                    doctorName: line.doctor().name,
+                    department: line.department().department,
+                    // fromDate: line.fromdate(),
+                    date: line.fromdate()
+                } : undefined
+            });
+            alert("Could now send this to server: " + JSON.stringify(dataToSave));
+            $.ajax({
+                url: 'webapi/leaves/make/',
+                type: 'post',
+                data: ko.toJSON(dataToSave),
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                success: function (returnedData) {
+                    alert("Response: " + JSON.stringify(returnedData));
+                }
+            });
+        };
     };
-};
 
-$(function() {
+$(function () {
     ko.applyBindings(new LeaveModel());
 });

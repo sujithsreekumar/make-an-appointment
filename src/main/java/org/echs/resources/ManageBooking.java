@@ -1,17 +1,15 @@
 package org.echs.resources;
 
-import org.echs.model.Booking;
-import org.echs.model.BookingEntity;
-import org.echs.model.ErrorMessage;
-import org.echs.model.Holiday;
-import org.echs.service.BookingService;
-import org.echs.service.HolidayService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
+import java.net.URI;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.temporal.TemporalAdjusters;
+import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
-import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -22,14 +20,15 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
-import java.net.URI;
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.ZoneId;
-import java.time.temporal.TemporalAdjusters;
-import java.util.List;
+
+import org.echs.model.Booking;
+import org.echs.model.BookingEntity;
+import org.echs.model.ErrorMessage;
+import org.echs.model.Holiday;
+import org.echs.service.BookingService;
+import org.echs.service.HolidayService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static java.util.stream.Collectors.toList;
 
@@ -57,14 +56,6 @@ public class ManageBooking {
         return Response.status(Response.Status.OK).entity(bookings).tag("found").build();
     }
 
-    @POST
-    @Path("/parse")
-    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public Response parseSMS(@FormParam("originator") String originator, @FormParam("payload") String payload) {
-        logger.info(payload);
-        return Response.status(Response.Status.OK).build();
-    }
-
 
     @POST
     @Path("/make")
@@ -79,7 +70,7 @@ public class ManageBooking {
                     .build();
         }
         if ((LocalTime.now(ZoneId.of("Asia/Kolkata")).isAfter(LocalTime.of(16, 0, 0)) &&
-                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(21, 0,0)))
+                LocalTime.now(ZoneId.of("Asia/Kolkata")).isBefore(LocalTime.of(21, 0, 0)))
                 || booking.getServiceNumber().equalsIgnoreCase("89102B")) {
             BookingEntity bookingEntity = new BookingEntity(booking);
             logger.info("Calling 'addBooking' service...");

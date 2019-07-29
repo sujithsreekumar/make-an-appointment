@@ -1,14 +1,14 @@
 package org.echs.resources;
 
 import java.util.List;
-import org.echs.model.Doctors;
-import org.echs.service.LeaveService;
-
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
+import org.echs.model.Doctors;
+import org.echs.service.LeaveService;
 
 /**
  * Root resource (exposed at "myresource" path)
