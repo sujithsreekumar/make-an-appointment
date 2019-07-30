@@ -6,7 +6,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Leave {
     private String doctorName;
     private String department;
-    private String date;
+    private String fromDate;
+    private String toDate;
 
     public String getDoctorName() {
         return doctorName;
@@ -24,11 +25,19 @@ public class Leave {
         this.department = department;
     }
 
-    public String getDate() {
-        return date;
+    public String getFromDate() {
+        return fromDate;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setFromDate(String fromDate) {
+        this.fromDate = fromDate;
+    }
+
+    public String getToDate() {
+        return toDate;
+    }
+
+    public void setToDate(String toDate) {
+        this.toDate = toDate;
     }
 }

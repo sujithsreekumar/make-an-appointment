@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECHS Kochi SMS Booking Application - Admin Page</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <style>
+        body {
+            background-image: url("styles/images/echs.jpeg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            height: 500px;
+        }
+    </style>
 </head>
 
 <body>
-<h2> What would you like to do?</h2>
+<h2 class="span-center"> What would you like to do?</h2>
 
 <div class="pure-menu pure-menu-horizontal">
     <ul class="pure-menu-list">
@@ -18,45 +26,54 @@
     </ul>
 </div>
 
-</div>
-<table class="pure-table">
-    <thead>
-    <tr>
-        <th width='25%'>Department</th>
-        <th width='25%'>Doctor</th>
-        <th width='25%'>From (format: dd/MM/yy)</th>
-        <th width='25%'>To (format: dd/MM/yy)</th>
-    </tr>
-    </thead>
-    <tbody data-bind="foreach: lines">
-    <tr>
-        <td>
-            <select data-bind='options: doctors, optionsText: "department", optionsCaption: "Select...", value: department'> </select>
-        </td>
-        <td data-bind="with: department">
-            <select data-bind='options: doctorNames, optionsText: "name", optionsCaption: "Select...", value: $parent.doctor'> </select>
-        </td>
-        <td>
-            <input data-bind='visible: department, value: fromdate, valueUpdate: "afterkeydown"' />
-        </td>
-        <td>
-            <input data-bind='visible: fromdate, value: todate, valueUpdate: "afterkeydown"' />
-        </td>
-        <td>
-            <a href='#' data-bind='click: $parent.removeLine'>Remove</a>
-        </td>
-    </tr>
-    </tbody>
-</table>
+<div data-bind="foreach: docs">
+    <input type="text" required
+           data-bind="value: $data.department, valueUpdate: ['keyup', 'propertychange', 'input']}" autofocus>
 </div>
 
-<button class="pure-button pure-button-primary" data-bind="click: addLine">Add another doctor</button>
-<button class="pure-button pure-button-primary" data-bind="click: save">Submit</button>
+<!--<table class="pure-table">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th width='25%'>Department</th>-->
+<!--        <th width='25%'>Doctor</th>-->
+<!--        <th width='25%'>From (format: yyyy-MM-dd)</th>-->
+<!--        <th width='25%'>To (format: yyyy-MM-dd)</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+
+<!--    <tbody data-bind="foreach: lines">-->
+<!--    <tr>-->
+<!--        <td>-->
+<!--            <select data-bind='options: doctors, optionsText: "department", optionsCaption: "Select...", value: $data.department'> </select>-->
+<!--        </td>-->
+<!--        <td data-bind="with: department">-->
+<!--            <select data-bind='options: doctorNames, optionsText: "name", optionsCaption: "Select...", value: $parent.doctor'> </select>-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <input data-bind='visible: department, value: fromdate, valueUpdate: "afterkeydown"' />-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <input data-bind='visible: fromdate, value: todate, valueUpdate: "afterkeydown"' />-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <a href='#' data-bind='click: $parent.removeLine'>Remove</a>-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+</div>
+</br>
+</br>
+<div>
+    <button class="pure-button pure-button-primary" data-bind="click: addLine">Add another doctor</button>
+    <button class="pure-button pure-button-primary" data-bind="click: save">Submit</button>
+</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js" type="text/javascript"></script>
 <script src="js/invokeapi.js"></script>
-<script src="js/doctors.js"></script>
+<!--<script src="js/doctos.js"></script>-->
+<script src="js/doctors_new.js"></script>
 
 </body>
 </html>

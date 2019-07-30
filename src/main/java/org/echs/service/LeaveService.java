@@ -27,7 +27,8 @@ public class LeaveService {
         Doctor.fromDoctorName(leave.getDoctorName());
 
         try {
-            DateTimeFormatter.ISO_LOCAL_DATE.parse(leave.getDate());
+            DateTimeFormatter.ISO_LOCAL_DATE.parse(leave.getFromDate());
+            DateTimeFormatter.ISO_LOCAL_DATE.parse(leave.getToDate());
         } catch (DateTimeParseException e) {
             throw new InvalidInputException("Date is not a valid format. Here is a sample format : 2018-01-01");
         }

@@ -11,6 +11,8 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
+import com.google.common.base.Strings;
 import org.echs.exception.DataNotFoundException;
 import org.echs.exception.InvalidInputException;
 import org.echs.model.Department;
@@ -26,12 +28,18 @@ public class LeaveDaoImpl implements LeaveDao {
 
     @Override
     public Leave updateLeave(Leave leave) {
-        String sql = "INSERT INTO leave VALUES(?,?,?) ON CONFLICT (doctor_name, department, date) DO NOTHING";
+        String sql = "INSERT INTO leave VALUES(?,?,?,?) ON CONFLICT (doctor_name, department, from_date, to_date) DO NOTHING";
         try (Connection con = Database.getConnection();
              PreparedStatement statement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+
             statement.setString(1, leave.getDoctorName());
             statement.setString(2, leave.getDepartment());
-            statement.setDate(3, Date.valueOf(leave.getDate()));
+            statement.setDate(3, Date.valueOf(leave.getFromDate()));
+            if (!Strings.isNullOrEmpty(leave.getToDate())) {
+                statement.setDate(4, Date.valueOf(leave.getToDate()));
+            } else {
+                statement.setDate(4, null);
+            }
 
             int affectedRows = statement.executeUpdate();
 
