@@ -33,6 +33,10 @@ public class BookingService {
         return bookingDao.getAllBookingsByDate(LocalDateTime.now(ZoneId.of("Asia/Kolkata")).toLocalDate());
     }
 
+    public final int getTodaysBookingCount() throws Exception {
+        return this.getBookings().size();
+    }
+
     public byte[] generateReport() throws Exception {
         return bookingDao.generateReportUsingiText();
     }

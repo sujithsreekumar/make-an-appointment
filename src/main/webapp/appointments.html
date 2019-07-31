@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Today's appointments</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+</head>
+<body>
+<h2 class="span-center"> You can download the complete booking list for the day here! </h2>
+
+<div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">Mark Doctor's leave</a></li>
+        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Update Doctors in a department</a></li>
+        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Fetch today's bookings</a></li>
+    </ul>
+</div>
+
+<h2> There are #{$booking_count} bookings today</h2>
+
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+    var booking_count = $.ajax({
+        url: 'webapi/bookings/today/',
+        type: 'GET',
+        data: ko.toJSON(dataToSave),
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        success: function (returnedData) {
+            alert("Response: " + JSON.stringify(returnedData));
+        }
+    });
+</script>
+
+</html>
