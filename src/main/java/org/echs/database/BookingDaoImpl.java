@@ -1,14 +1,5 @@
 package org.echs.database;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Element;
-import com.itextpdf.text.Font;
-import com.itextpdf.text.Phrase;
-import com.itextpdf.text.pdf.ColumnText;
-import com.itextpdf.text.pdf.PdfPCell;
-import com.itextpdf.text.pdf.PdfPTable;
-import com.itextpdf.text.pdf.PdfWriter;
-import com.itextpdf.text.pdf.draw.DottedLineSeparator;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -22,6 +13,16 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.ColumnText;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.pdf.draw.DottedLineSeparator;
 import org.echs.exception.DataNotFoundException;
 import org.echs.exception.InvalidInputException;
 import org.echs.model.BookingEntity;
@@ -285,7 +286,7 @@ public class BookingDaoImpl implements BookingDao {
             document.add(new Phrase(" "));
 
             PdfPTable pdfPTable = new PdfPTable(6);
-            pdfPTable.setWidths(new float[] {5f, 20f, 20f, 18f, 24f, 13f});
+            pdfPTable.setWidths(new float[]{5f, 20f, 20f, 18f, 24f, 13f});
 
             pdfPTable.addCell(new Phrase("S.No", boldFont));
             pdfPTable.addCell(new Phrase("Doctor Name", boldFont));

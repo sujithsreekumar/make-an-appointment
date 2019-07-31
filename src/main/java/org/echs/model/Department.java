@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 public enum Department {
     MED_SPLST("MED_SPLST"),
-    GENMED("GEN_MED"),
+    GEN_MED("GEN_MED"),
     DENTAL("DENTAL");
 
     private String departmentName;

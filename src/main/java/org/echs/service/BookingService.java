@@ -147,6 +147,8 @@ public class BookingService {
                 } else {
                     throw new BookingException("Patient already has an existing booking with MED_SPLST for the selected date.");
                 }
+            } else {
+                throw new BookingException("No bookings available for this department");
             }
         }
     }

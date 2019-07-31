@@ -27,21 +27,13 @@ public class LeaveDaoImpl implements LeaveDao {
     private static final Logger logger = LoggerFactory.getLogger(LeaveDaoImpl.class);
 
     @Override
-    public Leave updateLeave(Leave leave) {
+    public Leave updateLeave(Leave leave) throws Exception {
         String sql = "INSERT INTO leave VALUES(?,?,?,?) ON CONFLICT (doctor_name, department, from_date, to_date) DO NOTHING";
         try (Connection con = Database.getConnection();
              PreparedStatement statement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
 
-            statement.setString(1, leave.getDoctorName());
-            statement.setString(2, leave.getDepartment());
-            statement.setDate(3, Date.valueOf(leave.getFromDate()));
-            if (!Strings.isNullOrEmpty(leave.getToDate())) {
-                statement.setDate(4, Date.valueOf(leave.getToDate()));
-            } else {
-                statement.setDate(4, null);
-            }
-
-            int affectedRows = statement.executeUpdate();
+            setLeaveAttributes(statement, leave);
+            final int affectedRows = statement.executeUpdate();
 
             if (affectedRows == 0) {
                 throw new SQLException("Leave for this doctor has already been marked.");
@@ -51,29 +43,49 @@ public class LeaveDaoImpl implements LeaveDao {
         } catch (SQLException e) {
             logger.error("Error : ", e.getMessage());
             throw new InvalidInputException(e.getMessage());
-        } catch (Exception e) {
-            logger.error("Error : ", e.getMessage());
-            throw new InvalidInputException(e.getMessage());
         }
         return leave;
     }
 
     @Override
+    public void updateLeave(List<Leave> leaves) throws Exception {
+        String sql = "INSERT INTO leave VALUES(?,?,?,?) ON CONFLICT (doctor_name, department, from_date) " +
+                "DO UPDATE set to_date = ?";
+        try (Connection con = Database.getConnection();
+             PreparedStatement statement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
+            leaves.forEach(leave -> {
+                try {
+                    setLeaveAttributes(statement, leave);
+                    statement.setDate(5, Date.valueOf(Strings.isNullOrEmpty(leave.getToDate()) ?
+                            leave.getFromDate() : leave.getToDate()));
+                    statement.executeUpdate();
+                } catch (SQLException e) {
+                    logger.error("SQL Exception occurred ", e.getMessage());
+                    throw new InvalidInputException(e.getMessage());
+                }
+            });
+        }
+    }
+
+    @Override
     public boolean isOnLeave(String doctorName, String department) throws Exception {
-        boolean isOnleave = false;
-        String sql = "SELECT * FROM leave WHERE doctor_name = ? AND department = ? AND date = ?";
+        String sql = "SELECT * FROM leave WHERE doctor_name = ? AND department = ? ";
         try (Connection con = Database.getConnection();
              PreparedStatement statement = con.prepareStatement(sql)) {
             statement.setString(1, doctorName);
             statement.setString(2, department);
-            statement.setDate(3, Date.valueOf(LocalDate.now(ZoneId.of("Asia/Kolkata")).plusDays(1)));
             try (ResultSet resultSet = statement.executeQuery()) {
                 while (resultSet.next()) {
-                    isOnleave = true;
+                    final LocalDate from_date = resultSet.getDate("from_date").toLocalDate();
+                    final LocalDate to_date = resultSet.getDate("to_date").toLocalDate();
+                    final LocalDate dateToCheck = LocalDate.now(ZoneId.of("Asia/Kolkata")).plusDays(1);
+                    if (doesDateFallOnStartOrEndOfLeavePeriod(from_date, to_date, dateToCheck) ||
+                            isDateInMidOfLeavePeriod(from_date, to_date, dateToCheck))
+                        return true;
                 }
             }
         }
-        return isOnleave;
+        return false;
     }
 
     @Override
@@ -129,5 +141,24 @@ public class LeaveDaoImpl implements LeaveDao {
         List<Doctors> doctorsList = new ArrayList<>();
         docMap.entrySet().iterator().forEachRemaining(departmentListEntry -> doctorsList.add(new Doctors(departmentListEntry.getKey(), departmentListEntry.getValue())));
         return doctorsList;
+    }
+
+    private void setLeaveAttributes(PreparedStatement statement, Leave leave) throws SQLException {
+        statement.setString(1, leave.getDoctorName());
+        statement.setString(2, leave.getDepartment());
+        statement.setDate(3, Date.valueOf(leave.getFromDate()));
+        if (!Strings.isNullOrEmpty(leave.getToDate())) {
+            statement.setDate(4, Date.valueOf(leave.getToDate()));
+        } else {
+            statement.setDate(4, Date.valueOf(leave.getFromDate()));
+        }
+    }
+
+    private boolean doesDateFallOnStartOrEndOfLeavePeriod(LocalDate from_date, LocalDate to_date, LocalDate dateToCheck) {
+        return dateToCheck.isEqual(from_date) || dateToCheck.isEqual(to_date);
+    }
+
+    private boolean isDateInMidOfLeavePeriod(LocalDate from_date, LocalDate to_date, LocalDate dateToCheck) {
+        return dateToCheck.isAfter(from_date) && dateToCheck.isBefore(to_date);
     }
 }

@@ -6,16 +6,30 @@ var LeaveLine = function () {
     self.todate = ko.observable();
 };
 
+var doctors = function () {
+    var tmp = null;
+    $.ajax({
+        'async': false,
+        'type': "GET",
+        'global': false,
+        'url': "webapi/resources/doctors",
+        'success': function (data) {
+            tmp = data;
+        }
+    });
+    return tmp;
+}();
+
 var LeaveModel = function () {
     var self = this;
-    var json = docs;
-    alert("Json is : " + JSON.stringify(json));
-    self.docs = ko.observableArray(json);
-    alert("docs is : " + self.docs())
+    // var json = docs;
+    // alert("Json is : " + JSON.stringify(json));
+    // self.docs = ko.observableArray(json);
+    // alert("docs is : " + self.docs())
+    // self.accid = ko.observable("Sujith");
 
     self.lines = ko.observableArray([new LeaveLine()]);
 
-    // self.accid = ko.observable("Sujith");
     //operations
     self.addLine = function () {
         self.lines.push(new LeaveLine())
@@ -34,8 +48,8 @@ var LeaveModel = function () {
         });
         alert("Could now send this to server: " + JSON.stringify(dataToSave));
         $.ajax({
-            url: 'webapi/leaves/make/',
-            type: 'post',
+            url: 'webapi/leaves/mark/',
+            type: 'PUT',
             data: ko.toJSON(dataToSave),
             headers: {
                 'Content-Type': 'application/json',
