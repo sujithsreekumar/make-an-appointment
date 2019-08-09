@@ -16,22 +16,24 @@
     </ul>
 </div>
 
-<h2> There are #{$booking_count} bookings today</h2>
+<div id="count">
+    </h2>
+</div>
+
 
 </body>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-    var booking_count = $.ajax({
-        url: 'webapi/bookings/today/',
+    $.ajax({
+        url: 'webapi/bookings/today',
         type: 'GET',
-        data: ko.toJSON(dataToSave),
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         },
         success: function (returnedData) {
-            alert("Response: " + JSON.stringify(returnedData));
+            $('#count').html('<p> There are ' + returnedData + ' bookings today!</p>');
         }
     });
 </script>

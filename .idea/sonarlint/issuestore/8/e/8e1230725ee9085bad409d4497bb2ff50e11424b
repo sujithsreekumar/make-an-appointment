@@ -1,37 +1,37 @@
 
-osquid:CommentedOutCodeLineš"<This block of commented-out lines of code should be removed.(ÔöŒ¯ýÿÿÿÿ8€Æ¼ÊÁ-
-rsquid:S1192."ODefine a constant instead of duplicating this literal "preferred_time" 3 times.(¿…Òõùÿÿÿÿ8€Æ¼ÊÁ-
-msquid:S1192F"ODefine a constant instead of duplicating this literal "service_number" 3 times.(¤šú8€Æ¼ÊÁ-
-ƒsquid:S4165¬"_Remove this useless assignment; "i" already holds the assigned value along all execution paths.(¨­ÈÍüÿÿÿÿ8€Æ¼ÊÁ-
-osquid:CommentedOutCodeLineö"<This block of commented-out lines of code should be removed.(ÿÕåüÿÿÿÿÿ8€Æ¼ÊÁ-
-Isquid:S3457·"%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8€Æ¼ÊÁ-
-hsquid:S2583Ë"DChange this condition so that it does not always evaluate to "false"(¦·úÓøÿÿÿÿ8”ÉóÖ -
-psquid:S1192,"MDefine a constant instead of duplicating this literal "patient_name" 4 times.(¢‰Ð¢ùÿÿÿÿ8€Æ¼ÊÁ-
-nsquid:S1192I"KDefine a constant instead of duplicating this literal "department" 3 times.(œð‡´øÿÿÿÿ8€Æ¼ÊÁ-
-vsquid:S00117¯"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Í§Ôúÿÿÿÿ8€Æ¼ÊÁ-
-osquid:CommentedOutCodeLineç"<This block of commented-out lines of code should be removed.(’°‘·úÿÿÿÿ8€Æ¼ÊÁ-
-osquid:S1192-"LDefine a constant instead of duplicating this literal "doctor_name" 4 times.(ÎÅÞ¤øÿÿÿÿ8€Æ¼ÊÁ-
-`squid:S1126ˆ"AReplace this if-then-else statement by a single return statement.(Œ‡Ü‘8€Æ¼ÊÁ-
-Fsquid:S1148P"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
-qsquid:S1192/"NDefine a constant instead of duplicating this literal "allotted_time" 4 times.(í³Ö–ýÿÿÿÿ8€Æ¼ÊÁ-
-Gsquid:S1148×"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
-Dsquid:S3457‘"%String contains no format specifiers.(Ê‚šÙ8€Æ¼ÊÁ-
-Gsquid:S1148º"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
-vsquid:S00117»"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÐ¦ûÿÿÿÿ8”ÉóÖ -
-vsquid:S00117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÙÓÊþÿÿÿÿ8€Æ¼ÊÁ-
-dsquid:S2147¹"ECombine this catch with the one at line 181, which has the same body.(”ý¾8€Æ¼ÊÁ-
-Gsquid:S1148Å"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8”ÉóÖ -
-psquid:S00117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üêå®8€Æ¼ÊÁ-
-Fsquid:S11482"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
-Isquid:S3457»"%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8€Æ¼ÊÁ-
-vsquid:S00117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖŽÔùÿÿÿÿ8€Æ¼ÊÁ-
-Fsquid:S1148q"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
-Gsquid:S1148¶"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
-dsquid:S2147"ECombine this catch with the one at line 141, which has the same body.(”ý¾8€Æ¼ÊÁ-
-qsquid:S00117µ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ö’8€Æ¼ÊÁ-
-psquid:S2077)"RUse a variable binding mechanism to construct this query instead of concatenation.(€’Í“8€Æ¼ÊÁ-
-fsquid:S2095‡"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–8€Æ¼ÊÁ-
-osquid:CommentedOutCodeLineø"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8€Æ¼ÊÁ-
-isquid:CommentedOutCodeLineã"<This block of commented-out lines of code should be removed.(ÂÃœ8€Æ¼ÊÁ-
-Dsquid:S3457Ž"%String contains no format specifiers.(Ê‚šÙ8€Æ¼ÊÁ-
-osquid:CommentedOutCodeLineé"<This block of commented-out lines of code should be removed.(­›ªôüÿÿÿÿ8€Æ¼ÊÁ-
+Fsquid:S1148r"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
+osquid:CommentedOutCodeLine›"<This block of commented-out lines of code should be removed.(ÔöŒ¯ýÿÿÿÿ8€Æ¼ÊÁ-
+vsquid:S00117¹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒÙÓÊþÿÿÿÿ8€Æ¼ÊÁ-
+psquid:S1192-"MDefine a constant instead of duplicating this literal "patient_name" 4 times.(¢‰Ð¢ùÿÿÿÿ8€Æ¼ÊÁ-
+hsquid:S2583Ì"DChange this condition so that it does not always evaluate to "false"(¦·úÓøÿÿÿÿ8”ÉóÖ -
+Fsquid:S1148Q"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
+vsquid:S00117©"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖŽÔùÿÿÿÿ8€Æ¼ÊÁ-
+Fsquid:S11483"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
+dsquid:S2147º"ECombine this catch with the one at line 182, which has the same body.(”ý¾8€Æ¼ÊÁ-
+osquid:CommentedOutCodeLineê"<This block of commented-out lines of code should be removed.(­›ªôüÿÿÿÿ8€Æ¼ÊÁ-
+isquid:CommentedOutCodeLineä"<This block of commented-out lines of code should be removed.(ÂÃœ8€Æ¼ÊÁ-
+nsquid:S1192J"KDefine a constant instead of duplicating this literal "department" 3 times.(œð‡´øÿÿÿÿ8€Æ¼ÊÁ-
+Gsquid:S1148Æ"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8”ÉóÖ -
+Isquid:S3457¼"%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8€Æ¼ÊÁ-
+osquid:CommentedOutCodeLine÷"<This block of commented-out lines of code should be removed.(ÿÕåüÿÿÿÿÿ8€Æ¼ÊÁ-
+qsquid:S00117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’ö’8€Æ¼ÊÁ-
+fsquid:S2095ˆ"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(„‡–8€Æ¼ÊÁ-
+osquid:S1192."LDefine a constant instead of duplicating this literal "doctor_name" 4 times.(ÎÅÞ¤øÿÿÿÿ8€Æ¼ÊÁ-
+qsquid:S11920"NDefine a constant instead of duplicating this literal "allotted_time" 4 times.(í³Ö–ýÿÿÿÿ8€Æ¼ÊÁ-
+`squid:S1126‰"AReplace this if-then-else statement by a single return statement.(Œ‡Ü‘8€Æ¼ÊÁ-
+psquid:S00117}"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üêå®8€Æ¼ÊÁ-
+msquid:S1192G"ODefine a constant instead of duplicating this literal "service_number" 3 times.(¤šú8€Æ¼ÊÁ-
+dsquid:S2147‘"ECombine this catch with the one at line 142, which has the same body.(”ý¾8€Æ¼ÊÁ-
+vsquid:S00117¼"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÐ¦ûÿÿÿÿ8”ÉóÖ -
+Gsquid:S1148Ø"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
+psquid:S2077*"RUse a variable binding mechanism to construct this query instead of concatenation.(€’Í“8€Æ¼ÊÁ-
+Dsquid:S3457"%String contains no format specifiers.(Ê‚šÙ8€Æ¼ÊÁ-
+Gsquid:S1148·"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
+vsquid:S00117°"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Í§Ôúÿÿÿÿ8€Æ¼ÊÁ-
+rsquid:S1192/"ODefine a constant instead of duplicating this literal "preferred_time" 3 times.(¿…Òõùÿÿÿÿ8€Æ¼ÊÁ-
+Gsquid:S1148»"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8€Æ¼ÊÁ-
+ƒsquid:S4165­"_Remove this useless assignment; "i" already holds the assigned value along all execution paths.(¨­ÈÍüÿÿÿÿ8€Æ¼ÊÁ-
+Dsquid:S3457’"%String contains no format specifiers.(Ê‚šÙ8€Æ¼ÊÁ-
+osquid:CommentedOutCodeLineù"<This block of commented-out lines of code should be removed.(ñ¥ùšøÿÿÿÿ8€Æ¼ÊÁ-
+Isquid:S3457¸"%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8€Æ¼ÊÁ-
+osquid:CommentedOutCodeLineè"<This block of commented-out lines of code should be removed.(’°‘·úÿÿÿÿ8€Æ¼ÊÁ-

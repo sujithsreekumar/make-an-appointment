@@ -81,3 +81,9 @@ Y
 )src/main/java/org/echs/model/Doctors.java,b/a/bac491470587e71129772cca0f210f4c1ccab3d8
 M
 src/main/webapp/js/doctors.js,4/7/47a379577c0c0d3814ab91c932cb9018179b6de1
+f
+6src/main/java/org/echs/exception/BookingException.java,0/e/0eb3ed319fd161b79240b34937b9a5552d9e08ca
+O
+src/main/webapp/datepicker.html,a/1/a172980932cc5a00124f56f551bfa7d8978fe2bf
+Q
+!src/main/webapp/appointments.html,4/8/484c52786fd9edc5799b0ca7152c2be7cda5e274

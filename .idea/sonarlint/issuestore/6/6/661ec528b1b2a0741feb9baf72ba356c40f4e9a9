@@ -1,11 +1,14 @@
 
-Nsquid:S1481n"0Remove this unused "doctorNames" local variable.(“Ü¸“8–„•¬´-
-bsquid:S21470"DCombine this catch with the one at line 45, which has the same body.(”ı¾8›ñ‰Ö³,
-isquid:CommentedOutCodeLineo"<This block of commented-out lines of code should be removed.(‘«…¥8–„•¬´-
-Fsquid:S1148Z"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›ñ‰Ö³,
-Hsquid:S34571"%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8Ğ´Š¤¿,
-Fsquid:S1148W"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›ñ‰Ö³,
-Osquid:S1481m",Remove this unused "doctors" local variable.(”°Ø¾ùÿÿÿÿ8–„•¬´-
-Wsquid:S1481f"4Remove this unused "doctorNamesList" local variable.(ªìí´øÿÿÿÿ8àÈ“¬´-
-Hsquid:S3457."%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8Ğ´Š¤¿,
-Ksquid:S1481e"(Remove this unused "map" local variable.(ëô¢¡øÿÿÿÿ8àÈ“¬´-
+Bsquid:S1640w"Convert this Map to an EnumMap.(ŞÁ“ğøÿÿÿÿ8˜©¦Ä-
+usquid:S00117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çš£Ìøÿÿÿÿ8¯˜™ÁÄ-
+qsquid:S00117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“İˆÒ8·ùÅÁÄ-
+nsquid:S1192~"KDefine a constant instead of duplicating this literal "department" 3 times.(ƒ¥Š²úÿÿÿÿ8˜©¦Ä-
+qsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÍÄò8·ùÅÁÄ-
+Fsquid:S1148l"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›ñ‰Ö³,
+qsquid:S00117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“İˆÒ8·ùÅÁÄ-
+Fsquid:S1148i"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›ñ‰Ö³,
+Hsquid:S3457,"%String contains no format specifiers.(ÂßòÄùÿÿÿÿ8åÖ·Ä-
+qsquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÍÄò8·ùÅÁÄ-
+usquid:S00117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Î½êùÿÿÿÿ8šÜ–ÁÄ-
+osquid:S1192f"LDefine a constant instead of duplicating this literal "doctor_name" 3 times.(ıÚñŒüÿÿÿÿ8˜©¦Ä-
+Hsquid:S3457?"%String contains no format specifiers.(ªà¿…ÿÿÿÿÿ8ú±ï·Ä-

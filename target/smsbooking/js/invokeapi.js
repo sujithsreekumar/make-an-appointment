@@ -22,11 +22,6 @@ var doctors = function () {
 
 var LeaveModel = function () {
     var self = this;
-    // var json = docs;
-    // alert("Json is : " + JSON.stringify(json));
-    // self.docs = ko.observableArray(json);
-    // alert("docs is : " + self.docs())
-    // self.accid = ko.observable("Sujith");
 
     self.lines = ko.observableArray([new LeaveLine()]);
 
@@ -46,7 +41,7 @@ var LeaveModel = function () {
                 toDate: line.todate()
             } : undefined
         });
-        alert("Could now send this to server: " + JSON.stringify(dataToSave));
+        alert("Following leaves will be marked: " + JSON.stringify(dataToSave));
         $.ajax({
             url: 'webapi/leaves/mark/',
             type: 'PUT',
@@ -61,6 +56,24 @@ var LeaveModel = function () {
         });
     };
 };
+
+// ko.bindingHandlers.datepicker = {
+//     init: function (element, valueAccessor, allBindingsAccessor) {
+//         var options = allBindingsAccessor().datepickerOptions || {};
+//         $(element).datepicker(options);
+//
+//         //handle the field changing
+//         ko.utils.registerEventHandler(element, "change", function () {
+//             var observable = valueAccessor();
+//             observable($(element).datepicker("getDate"));
+//         });
+//
+//         //handle disposal (if KO removes by the template binding)
+//         ko.utils.domNodeDisposal.addDisposeCallback(element, function () {
+//             $(element).datepicker("destroy");
+//         });
+//     }
+// };
 
 $(function () {
     ko.applyBindings(new LeaveModel());
